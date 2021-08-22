@@ -189,8 +189,7 @@ body {
 }
 
 .section-heading h2 {
-  font-size: 30px;
-  text-transform: capitalize;
+  font-size: 26px;
   color: #2a2a2a;
   font-weight: 800;
   position: relative;
@@ -201,6 +200,7 @@ body {
 .section-heading h2 em {
   font-style: normal;
   color: #33ccc5;
+  text-transform-lowercase;
 }
 
 .section-heading h2 span {
@@ -213,7 +213,6 @@ body {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
-  text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
@@ -233,7 +232,6 @@ body {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
-  text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
@@ -883,7 +881,6 @@ Banner Style
 }
 
 .main-banner .left-content h6 {
-  text-transform: capitalize;
   font-size: 15px;
   font-weight: 400;
   color: #2a2a2a;
@@ -1302,11 +1299,10 @@ About Us Style
 }
 
 .about-us .about-item h6 {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 5px;
   font-weight: 400;
   color: #2a2a2a;
-  text-transform: capitalize;
 }
 
 .about-us p {
@@ -1727,4 +1723,8 @@ responsive
   form#contact {
     padding: 30px;
   }
+}
+
+.line-dec{
+  font-size: 180px;
 }
