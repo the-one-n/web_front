@@ -239,7 +239,7 @@ body a{
 	float:left;
 }
 .logo{
-	width:150px;
+	width:15%;
 	float:left;
 }
 ul.clock{
@@ -2430,3 +2430,7 @@ h4.head_single {
 }
 }
 
+.col-md-9{
+	background-color: black;
+	margin-left: 150px;
+}

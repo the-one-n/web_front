@@ -11,3 +11,7 @@ spinner--------СДЕЛАТЬ ПЕРЕНАПРАВЛЕНИЕ НА blog.html
 paperclip------СДЕЛАТЬ ПЕРЕНАПРАВЛЕНИЕ НА blog.html
 
 Сделать 3 фото slider1.jpg, slider2.jpg, slider3.jpg 1170x325 для img-responsive\callbacks0\1\2
+
+<a class="color8" href="blog.html">Новости</a></li>
+
+Перевод + изменение всех .html
