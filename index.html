@@ -1,622 +1,176 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-<title>Konohagakure</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Ебануть сюда кейворды" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/jquery.countdown.css" />
-<!-- Custom Theme files -->
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<!-- dropdown -->
-<script src="js/jquery.easydropdown.js"></script>
-<!-- start menu -->
-<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/megamenu.js"></script>
-<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<script src="js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: false,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-</script>
-<script src="js/jquery.countdown.js"></script>
-<script src="js/script.js"></script>
-</head>
-<body>
-<div class="header_top">
-  <div class="container">
-  	<div class="header_top-box">
-     <div class="header-top-left">
-     	<!--
-			  <div class="box">
-			  	   	<select tabindex="4" class="dropdown drop">
-					   <option value="" class="label" value="">Dollar :</option>
-				       <option value="1">Dollar</option>
-				       <option value="2">Euro</option>
-					</select>
-   			   </div>
-   			   style: .box{
-	float:left;
-	width:20.5%;
-	margin-right:10.6%;
-} -->
-   			   <div class="box1">
-   				       <select tabindex="4" class="dropdown">
-							<option value="" class="label" value="">Русский</option>
-							<option value="1">Русский</option>
-							<option value="2">Белорусский</option>
-							<option value="3">English</option>
-					  </select>
-   			   </div>
-   				    <div class="clearfix"></div>
-   			 </div>
-			 <div class="cssmenu">
-				<ul>
-					<li class="active"><a href="login.html">Аккаунт</a></li> 
-					<li><a href="#">Переделать</a></li> 
-					<li><a href="login.html">Войти</a></li> 
-					<li><a href="register.html">Регистрация</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"></div>
-   </div>
-</div>
-</div>
-<div class="header_bottom">
-	<div class="container">
-	 <div class="header_bottom-box">
-		<div class="header_bottom_left">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="header_bottom_right">
-			<div class="search">
-			  <input type="text" value="Ваш номер телефона" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ваш номер телефона';}">
-			  <input type="submit" value="">
-	  		</div>
-	  		<ul class="bag">
-	  			<a href="#"><i class="bag_left"> </i></a>
-	  			<a href="#"><li class="bag_right"><p>0.0 р</p> </li></a>
-	  			<div class="clearfix"> </div>
-	  		</ul>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-</div>
-</div>
-<div class="menu">
-	<div class="container">
-		<div class="menu_box">
-	     <ul class="megamenu skyblue">
-			<li class="active grid"><a class="color2" href="index.html">Главная</a></li>
-			<li><a class="color4" href="#">Популярные</a></li>				
-			<li><a class="color10" href="#">Все наборы</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Суши</h4>
-								<ul>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-								</ul>	
-							</div>							
+<html lang="ru">
+	<head>
+		<title>KonohaGakure</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+			<div id="header">
+				<div class="top">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image logo48"><img src="images/logo.png" alt="" /></span>
+							<h1 id="title">Konoha Gakure</h1>
+							<p>Суши-бар</p>
 						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Роллы</h4>
-								<ul>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-								</ul>	
-							</div>							
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Главная</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Меню</span></a></li>
+								<li><a href="#about" id="about-link"><span >Акции</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-user">Контакты</span></a></li>
+								<li><a href="#galery" id="galery-link"><span >Галерея</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Какой-нибудь текст про <strong>Konoha Gakure</strong></h2>
+								<p>Какое-нибудь описание</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Меню</a>
+							</footer>
+
 						</div>
-						<div class="col2">
-							<div class="h_nav">
-								<h4>Лучшие</h4>
-								<ul>
-									<li class>
-										<div class="p_left">
-										   <img src="images/main_small.jpg" class="img-responsive" alt=""/>
-										</div>
-										<div class="p_right">
-											<h4><a href="#">Название</a></h4>
-											<span class="item-cat"><small><a href="#">Подназвание</a></small></span>
-											<span class="price">Цена</span>
-										</div>
-										<div class="clearfix"> </div>
-									</li>
-									<li>
-										<div class="p_left">
-										  <img src="images/main_small.jpg" class="img-responsive" alt=""/>
-										</div>
-										<div class="p_right">
-											<h4><a href="#">Название</a></h4>
-											<span class="item-cat"><small><a href="#">Подназвание</a></small></span>
-											<span class="price">Цена</span>
-										</div>
-										<div class="clearfix"> </div>
-									</li>
-									<li>
-										<div class="p_left">
-										   <img src="images/main_small.jpg" class="img-responsive" alt=""/>
-										</div>
-										<div class="p_right">
-											<h4><a href="#">Название</a></h4>
-											<span class="item-cat"><small><a href="#">Подназвание</a></small></span>
-											<span class="price">Цена</span>
-										</div>
-										<div class="clearfix"> </div>
-									</li>
-								</ul>	
-							</div>										
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Меню</h2>
+							</header>
+
+							<p>Какой-нибудь текст про меню. Сюда лучше запихнуть топ n блюд.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Блюдо 1</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Блюдо 2</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Блюдо 3</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Блюдо 4</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Блюдо 5</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Блюдо 6</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
 						</div>
-					  </div>
-					</div>
-			</li>
-			<li><a class="color3" href="#">TEST</a></li>
-			<li><a class="color7" href="#">Акции</a>
-				<!--ЭТО АКЦИИ!!!<div class="megapanel">
-					<div class="row">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Men</h4>
-								<ul>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-								</ul>	
-							</div>							
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Акции</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>Здесь слайдер с акционными товарами</p>
+
 						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Women</h4>
-								<ul>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-									<li><a href="men.html">Название</a></li>
-								</ul>	
-							</div>							
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Связаться с нами</h2>
+							</header>
+
+							<p>Бла-бла-бла. Текст про связь.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Имя" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Сообщение"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Отправить сообщение" />
+									</div>
+								</div>
+							</form>
+
 						</div>
-						<div class="col2">
-							<div class="h_nav">
-								<h4>Trends</h4>
-								<ul>
-									<li class>
-										<div class="p_left">
-										   <img src="images/t1.jpg" class="img-responsive" alt=""/>
-										</div>
-										<div class="p_right">
-											<h4><a href="#">Denim shirt</a></h4>
-											<span class="item-cat"><small><a href="#">Jackets</a></small></span>
-											<span class="price">29.99 $</span>
-										</div>
-										<div class="clearfix"> </div>
-									</li>
-									<li>
-										<div class="p_left">
-										  <img src="images/t2.jpg" class="img-responsive" alt=""/>
-										</div>
-										<div class="p_right">
-											<h4><a href="#">Denim shirt</a></h4>
-											<span class="item-cat"><small><a href="#">Jackets</a></small></span>
-											<span class="price">29.99 $</span>
-										</div>
-										<div class="clearfix"> </div>
-									</li>
-									<li>
-										<div class="p_left">
-										   <img src="images/t3.jpg" class="img-responsive" alt=""/>
-										</div>
-										<div class="p_right">
-											<h4><a href="#">Denim shirt</a></h4>
-											<span class="item-cat"><small><a href="#">Jackets</a></small></span>
-											<span class="price">29.99 $</span>
-										</div>
-										<div class="clearfix"> </div>
-									</li>
-								</ul>	
-							</div>												
-						</div>
-					  </div>
-					</div>-->
-			</li>
-			<li><a class="color8" href="#">Новости</a></li>
-			<div class="clearfix"> </div>
-		 </ul>
-	  </div>
-</div>
-</div>
-<div class="index_slider">
-	<div class="container">
-	  <div class="callbacks_container">
-	      <ul class="rslides" id="slider">
-	        <li><img src="images/slider1.jpg" class="img-responsive" alt=""/></li>
-	        <li><img src="images/slider2.jpg" class="img-responsive" alt=""/></li>
-	        <li><img src="images/slider3.jpg" class="img-responsive" alt=""/></li>
-	      </ul>
-	  </div>
-	</div> 
-</div>
-<div class="content_top">
-	<div class="container">
-		<div class="grid_1">
-			<div class="col-md-3">
-			 <div class="box2">
-			 	<ul class="list1">
-			 		<i class="lock"> </i>
-			 		<li class="list1_right"><p>Пример описания 1</p></li>
-			 		<div class="clearfix"> </div>
-			 	</ul>
-			 </div>
+					</section>
+
 			</div>
-			<div class="col-md-3">
-			 <div class="box3">
-			 	<ul class="list1">
-			 		<i class="clock1"> </i>
-			 		<li class="list1_right"><p>Пример описания 2</p></li>
-			 		<div class="clearfix"> </div>
-			 	</ul>
-			 </div>
-			</div>
-			<div class="col-md-3">
-			 <div class="box4">
-			 	<ul class="list1">
-			 		<i class="vehicle"> </i>
-			 		<li class="list1_right"><p>Пример описания 3</p></li>
-			 		<div class="clearfix"> </div>
-			 	</ul>
-			 </div>
-			</div>
-			<div class="col-md-3">
-			 <div class="box5">
-			 	<ul class="list1">
-			 		<i class="dollar"> </i>
-			 		<li class="list1_right"><p>Пример описания 4</p></li>
-			 		<div class="clearfix"> </div>
-			 	</ul>
-			 </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="column_center">
-			<h1>Важный текст для привлечения внимания </h1>
-			<h2>Текст поменьше для дополнительной информации</h2>
-		</div>
-		<div class="sellers_grid">
-			<ul class="sellers">
-				<li class="sellers_desc"><h2>Лучшие наборы</h2></li>
-				<div class="clearfix"> </div>
-			</ul>
-		</div>
-		<div class="grid_2">
-			<div class="col-md-3 span_6">
-			  <div class="box_inner">
-				<img src="images/main.jpg" class="img-responsive" alt=""/>
-				 <div class="sale-box"> </div>
-				 <div class="desc">
-				 	<h3>Название</h3>
-				 	<h4>Цена</h4>
-				 	<ul class="list2">
-				 	  <li class="list2_left"><span class="m_1"><a href="#" class="link">В корзину</a></span></li>
-				 	  <li class="list2_right"><span class="m_2"><a href="#" class="link1">Подробнее</a></span></li>
-				 	  <div class="clearfix"> </div>
-				 	</ul>
-				 	<div class="heart"> </div>
-				 </div>
-			   </div>
-			</div>
-			<div class="col-md-3 span_6">
-			  <div class="box_inner">
-				<img src="images/main.jpg" class="img-responsive" alt=""/>
-				 <div class="sale-box"> </div>
-				 <div class="desc">
-				 	<h3>Название</h3>
-				 	<h4>Цена</h4>
-				 	<ul class="list2">
-				 	  <li class="list2_left"><span class="m_1"><a href="#" class="link">В корзину</a></span></li>
-				 	  <li class="list2_right"><span class="m_2"><a href="#" class="link1">Подробнее</a></span></li>
-				 	  <div class="clearfix"> </div>
-				 	</ul>
-				 	<div class="heart"> </div>
-				 </div>
-			   </div>
-			</div>
-			<div class="col-md-3 span_6">
-			  <div class="box_inner">
-				<img src="images/main.jpg" class="img-responsive" alt=""/>
-				 <div class="sale-box"> </div>
-				 <div class="desc">
-				 	<h3>Название</h3>
-				 	<h4>Цена</h4>
-				 	<ul class="list2">
-				 	  <li class="list2_left"><span class="m_1"><a href="#" class="link">В корзину</a></span></li>
-				 	  <li class="list2_right"><span class="m_2"><a href="#" class="link1">Подробнее</a></span></li>
-				 	  <div class="clearfix"> </div>
-				 	</ul>
-				 	<div class="heart"> </div>
-				 </div>
-			   </div>
-			</div>
-			<div class="col-md-3 span_6">
-			  <div class="box_inner">
-				<img src="images/main.jpg" class="img-responsive" alt=""/>
-				 <div class="sale-box"> </div>
-				 <div class="desc">
-				 	<h3>Название</h3>
-				 	<h4>Цена</h4>
-				 	<ul class="list2">
-				 	  <li class="list2_left"><span class="m_1"><a href="#" class="link">В корзину</a></span></li>
-				 	  <li class="list2_right"><span class="m_2"><a href="#" class="link1">Подробнее</a></span></li>
-				 	  <div class="clearfix"> </div>
-				 	</ul>
-				 	<div class="heart"> </div>
-				 </div>
-			   </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div> 
-	</div>
-</div>
-<div class="content_middle">
-	<div class="container">
-		<ul class="promote">
-			<i class="promote_icon"> </i>
-			<li class="promote_head"><h3>Акции</h3></li>
-		</ul>
-		<ul id="flexiselDemo3">
-						<li><img src="images/main.jpg"  class="img-responsive" /><div class="grid-flex"><h4>Название </h4><p>Цена</p>
-							<div class="m_3"><a href="#" class="link2">В корзину</a></div>
-							<div class="ticket"> </div>
-						</div></li>
-						<li><img src="images/main.jpg"  class="img-responsive" /><div class="grid-flex"><h4>Название </h4><p>Цена</p>
-							<div class="m_3"><a href="#" class="link2">В корзину</a></div>
-							<div class="ticket"> </div>
-						</div></li>
-						<li><img src="images/main.jpg"  class="img-responsive" /><div class="grid-flex"><h4>Название </h4><p>Цена</p>
-							<div class="m_3"><a href="#" class="link2">В корзину</a></div>
-							<div class="ticket"> </div>
-						</div></li>
-						<li><img src="images/main.jpg"  class="img-responsive" /><div class="grid-flex"><h4>Название </h4><p>Цена</p>
-							<div class="m_3"><a href="#" class="link2">В корзину</a></div>
-							<div class="ticket"> </div>
-						</div></li>
-						<li><img src="images/main.jpg"  class="img-responsive" /><div class="grid-flex"><h4>Название </h4><p>Цена</p>
-							<div class="m_3"><a href="#" class="link2">В корзину</a></div>
-							<div class="ticket"> </div>
-						</div></li>
-				     </ul>
-				    <script type="text/javascript">
-					 $(window).load(function() {
-						$("#flexiselDemo3").flexisel({
-							visibleItems: 6,
-							animationSpeed: 1000,
-							autoPlay:true,
-							autoPlaySpeed: 3000,    		
-							pauseOnHover: true,
-							enableResponsiveBreakpoints: true,
-					    	responsiveBreakpoints: { 
-					    		portrait: { 
-					    			changePoint:480,
-					    			visibleItems: 1
-					    		}, 
-					    		landscape: { 
-					    			changePoint:640,
-					    			visibleItems: 2
-					    		},
-					    		tablet: { 
-					    			changePoint:768,
-					    			visibleItems: 3
-					    		}
-					    	}
-					    });
-					    
-					});
-				   </script>
-				   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-	</div>
-</div>
-<div class="container">
-   <div class="content_middle_bottom">
-	  <div class="col-md-4">
-		  <ul class="spinner">
-			<i class="spinner_icon"> </i>
-			<li class="spinner_head"><h3>Какая-нибудь реклама</h3></li>
-			<div class="clearfix"> </div>
-		  </ul>
-		  <div class="timer_box">
-			<div class="thumb"> </div>
-			<div class="timer_grid">
- 			<ul id="countdown">
-			</ul>
-				<ul class="navigation">
-					<li>
-						<p class="timeRefDays">ДНЕЙ</p>
-					</li>
-					<li>
-						<p class="timeRefHours">ЧАСОВ</p>
-					</li>
-					<li>
-						<p class="timeRefMinutes">МИНУТ</p>
-					</li>
-					<li>
-						<p class="timeRefSeconds">СЕКУНД</p>
-					</li>
-				</ul>
-          </div>
-          <div class="thumb_desc">
-          	<h3> ОПИСАНИЕ РЕКЛАМЫ</h3>
-          	<div class="price">
-			   <span class="reducedfrom">Цена без акции</span>
-			   <span class="actual">Цена с акцией</span>
-			</div>
-		 </div>
-		 <a href="#"><div class="m_3 deal"><div class="link3">Заказать.</div></div></a>
-		</div>
-		</div>
-		<div class="col-md-8">
-		  <ul class="spinner">
-			<i class="paperclip"> </i>
-			<li class="spinner_head"><h3>Что у нас нового</h3></li>
-			<div class="clearfix"> </div>
-		  </ul>
-		      <div class="a-top">
-				 <div class="left-grid">
-					<img src="images/t4.jpg" class="img-responsive" alt=""/>
-				 </div>
-				 <div class="right-grid">
-					<h4><a href="#">Новость 1</a></h4>
-					<p>Описание новости 1</p>
-				 </div>
-				 <div class="but">
-				   <a class="arrow" href="#"> </a>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="a-top">
-				 <div class="left-grid">
-					<img src="images/t5.jpg" class="img-responsive" alt=""/>
-				 </div>
-				 <div class="right-grid">
-					<h4><a href="#">Новость 2</a></h4>
-					<p>Описание новости 2</p>				 </div>
-				 <div class="but">
-				   <a class="arrow" href="#"> </a>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="a-top">
-				 <div class="left-grid">
-					<img src="images/t6.jpg" class="img-responsive" alt=""/>
-				 </div>
-				 <div class="right-grid">
-					<h4><a href="#">Новость 3</a></h4>
-					<p>Описание новости 3</p>
-				 </div>
-				 <div class="but">
-				   <a class="arrow" href="#"> </a>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-			 <div class="a-top">
-				 <div class="left-grid">
-					<img src="images/t7.jpg" class="img-responsive" alt=""/>
-				 </div>
-				 <div class="right-grid">
-					<h4><a href="#">Новость 4</a></h4>
-					<p>Описание новости 4</p>
-				 </div>
-				 <div class="but">
-				   <a class="arrow" href="#"> </a>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-    <div class="content_bottom">
-    	<div class="col-md-3 span_1">
-    	  <ul class="spinner">
-			 <i class="box_icon"> </i>
-			 <li class="spinner_head"><h3>Фото заведения</h3></li>
-			 <div class="clearfix"> </div>
-		  </ul>
-		  <img src="images/t8.jpg" class="img-responsive" alt=""/>
-    	</div>
-    	<div class="col-md-3 span_1">
-    	  <ul class="spinner">
-			 <i class="bubble"> </i>
-			 <li class="spinner_head"><h3>О нас</h3></li>
-			 <div class="clearfix"> </div>
-		  </ul>
-		  <p>Текст, в котором описано заведение</p>
-    	</div>
-    	<div class="col-md-3 span_1">
-    	  <ul class="spinner">
-			 <i class="mail"> </i>
-			 <li class="spinner_head"><h3>Наши соц. сети</h3></li>
-			 <div class="clearfix"> </div>
-		  </ul>
-		 <ul class="social">
-			<li><a href=""> <i class="fb"> </i> </a></li>
-		    <li><a href=""><i class="tw"> </i> </a></li>
-			<li><a href=""><i class="google"> </i> </a></li>
-			<li><a href=""><i class="linkedin"> </i> </a></li>
-			<li><a href=""><i class="skype"> </i> </a></li>
-		</ul>
-    	</div>
-    	<div class="col-md-3 span_1">
-    	  <ul class="spinner">
-			 <i class="mail"> </i>
-			 <li class="spinner_head"><h3>Наш адрес</h3></li>
-			 <div class="clearfix"> </div>
-		  </ul>
-		  <p>Минск</p>
-		  <p>ТЦ "Караван" г. Минск, Налибокская улица, 1</p>
-		  <p>+375292309072</p>
-		  <p><a href="mailto:info@demo.com"> example@mail.ru</a></p>
-    	</div>
-    	<div class="clearfix"> </div>
-    </div>
-</div>
-<div class="footer">
-	<!--<div class="container">
-		<img src="images/pay.png" class="img-responsive" alt=""/>
-		<ul class="footer_nav">
-		  <li><a href="#">Home</a></li>
-		  <li><a href="#">Blog</a></li>
-		  <li><a href="#">Shop</a></li>
-		  <li><a href="#">Media</a></li>
-		  <li><a href="#">Features</a></li>
-		  <li><a href="#">About Us</a></li>
-		  <li><a href="contact.html">Contact Us</a></li>
-		</ul>
-		<p class="copy">Copyright&copy; 2015 Template by <a href="http://w3layouts.com" target="_blank"> w3layouts</a></p>
-	</div>
--->
-<p>ТУТ МЕСТО ДЛЯ ФУТЕРА, ЕСЛИ ОН НУЖЕН</p>
-</div>
-</body>
-</html>		
+
+		<!-- Footer -->
+			<div class="footer-left">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">TikTok</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
