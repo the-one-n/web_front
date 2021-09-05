@@ -1,0 +1,112 @@
+html, body {
+	height:100%;
+	margin: 0;
+	padding:  0;
+	width: 100%;
+}
+
+body{
+	display:  flex;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background: linear-gradient(to bottom, #1F4F4F 0%, #483D8B 100%);
+	min-width: 20%;
+	height:  100%;
+	color:  white;
+}
+
+
+.logo h1{
+	text-align: center;
+}
+.logo_img{
+	height: 75px;
+	width: 75px;
+	margin-left: 40%;
+}
+
+
+
+.menu{
+margin-top: 40%;
+}
+
+.menu ul,
+.menu ol{
+	list-style: none;
+}
+
+.menu > ul{
+	padding: 0px;
+
+}
+
+.menu > ul li a{
+	display: block;
+background-image: radial-gradient(circle at 50% -20.71%, #3d3d95 0, #3d3d95 50%, #3d3d95 100%);	padding: 20px 0px 20px 0px;
+	font-size: 26px;
+	color:  white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+
+}
+
+.menu > ul li{
+	position: relative;
+	border-top: 5px solid black;
+	text-align: center;
+
+}
+
+.menu > ul li:first-child{
+border:  none;
+}
+
+.menu li a:hover{
+background-image: linear-gradient(180deg, #d86c6c 0, #d86c6c 50%, #d86c6c 100%);	color: white;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.5s ease;
+}
+
+.submenu{
+	padding: 0;
+}
+
+.menu li ul{
+	position: absolute;
+	right: -26%;
+	top: 0;
+	display: none;
+}
+
+.menu li > ul li a{
+text-transform: none;
+background-image: linear-gradient(180deg, #d86c6c 0, #d86c6c 50%, #d86c6c 100%);}
+
+.menu li:hover > ul{
+	display: block;
+}
+
+main{
+	min-width: 65%;
+	color:  white;
+	height: 100%;
+}
+
+.main_img{
+	background: url("../images/main.jpg");
+	background-size: contain;
+	height: 100%;
+}
+
+footer{
+	min-width: 15%;
+	background-image: linear-gradient(130deg, #6d5d53 0, #6c594f 6.25%, #6b544b 12.5%, #6a4d46 18.75%, #684641 25%, #663e3d 31.25%, #633539 37.5%, #5e2a35 43.75%, #591f32 50%, #531330 56.25%, #4c0630 62.5%, #440031 68.75%, #3b0033 75%, #320035 81.25%, #270039 87.5%, #19003c 93.75%, #030040 100%);
+}
