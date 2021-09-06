@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "DaysOne";
+    src: url("DaysOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("Pacifico-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.ttf") format("truetype");
+}
