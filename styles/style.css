@@ -41,8 +41,8 @@ header{
 }
 
 .logo_img_img{
-	height: 90%;
-	width: 90%;
+	height: 50%;
+	width: 50%;
 }
 
 .heading {
@@ -80,7 +80,7 @@ margin-top: 10%;
 }
 
 .nav-menu-item__link, .submenu-item__link, .submenu-sublist-item__link {
-	font-size: 2vw;
+	font-size: 1vw;
 	color:  white;
 	text-decoration: none;
 	text-transform: uppercase;
