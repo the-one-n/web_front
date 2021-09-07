@@ -3,21 +3,15 @@ html, body {
 	margin: 0;
 	padding:  0;
 	width: 100%;
-	overflow-x: hidden;
 }
 
 body{
 	display:  flex;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1{
 	margin: 0;
 	padding: 0;
-}
-
-button {
-	background: none;
-	border: 0;
 }
 
 ul, ol {
@@ -25,26 +19,28 @@ ul, ol {
 }
 
 header{
-	background: linear-gradient(to bottom, #1F4F4F 0%, #483D8B 100%);
-	min-width: 20%;
+	background: orange;
+	min-width: 15%;
 	height:  100%;
 	color:  white;
 }
 
 
-.logo h1{
+.logo {
 	text-align: center;
+	color: black;
 }
-.logo_img{
-	height: 75px;
-	width: 75px;
-	margin-left: 40%;
+
+
+.logo_img_img{
+	height: 200px;
+	width: 200px;
 }
 
 
 
 nav {
-margin-top: 40%;
+margin-top: 10%;
 }
 
 .nav-menu {
@@ -53,11 +49,12 @@ margin-top: 40%;
 }
 
 .nav-menu-item {
-	background-image: radial-gradient(circle at 50% -20.71%, #3d3d95 0, #3d3d95 50%, #3d3d95 100%);
+	background:black;
 	padding: 20px 0 20px;
 	display: block;
 	position: relative;
 	border-top: 5px solid black;
+	border-color: orange;
 	text-align: center;
 }
 
@@ -95,7 +92,7 @@ border:  none;
 }
 
 .submenu-item, .submenu-sublist-item {
-	background-image: linear-gradient(180deg, #d86c6c 0, #d86c6c 50%, #d86c6c 100%);
+	background:  black;
 	color: white;
 	padding: 20px 0 20px;
 	position: relative;
@@ -132,18 +129,61 @@ main {
 }
 
 footer{
-	min-width: 15%;
-	background-image: linear-gradient(130deg, #6d5d53 0, #6c594f 6.25%, #6b544b 12.5%, #6a4d46 18.75%, #684641 25%, #663e3d 31.25%, #633539 37.5%, #5e2a35 43.75%, #591f32 50%, #531330 56.25%, #4c0630 62.5%, #440031 68.75%, #3b0033 75%, #320035 81.25%, #270039 87.5%, #19003c 93.75%, #030040 100%);
+	background:  black;
+	min-width:  20%;
+	align-items: center;
 }
 
-.minus {
-	background-image: url("../images/test/minus.svg");
-}
 
-.plus {
-	background-image: url("../images/test/plus.svg");
-}
+#stock {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000; /* Чёрный фон */
+  height: 100%; /* Высота максимальна */
+  left: 0; /* Нулевой отступ слева */
+  opacity: 0.85; /* Степень прозрачности */
+  position: fixed; /* Фиксированное положение */
+  top: 0; /* Нулевой отступ сверху */
+  width: 100%; /* Ширина максимальна */
+  z-index: 100; /* Заведомо быть НАД другими элементами */
+      }
+      #okno {
+        width: 50%;
+        height: 30%;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid lime;
+        border-radius: 10px;
+        color: lime;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+      #stock:target {display: block;}
 
-.remove {
-	background-image: url("../images/test/remove.svg");
-}
+      .start_a{
+        text-decoration: none;
+        color:  white;
+      }
+
+      .instagram{
+      	width: 100%px;
+      	height: 120px;
+      }
+
+      .tiktok{
+      	width: 100%;
+      	height: 120px;
+      }
+
+      .facebook{
+      	width: 100%;
+      	height: 120px;
+      }
