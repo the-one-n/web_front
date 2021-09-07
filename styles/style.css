@@ -3,15 +3,21 @@ html, body {
 	margin: 0;
 	padding:  0;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 body{
 	display:  flex;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+}
+
+button {
+	background: none;
+	border: 0;
 }
 
 ul, ol {
@@ -128,4 +134,16 @@ main {
 footer{
 	min-width: 15%;
 	background-image: linear-gradient(130deg, #6d5d53 0, #6c594f 6.25%, #6b544b 12.5%, #6a4d46 18.75%, #684641 25%, #663e3d 31.25%, #633539 37.5%, #5e2a35 43.75%, #591f32 50%, #531330 56.25%, #4c0630 62.5%, #440031 68.75%, #3b0033 75%, #320035 81.25%, #270039 87.5%, #19003c 93.75%, #030040 100%);
+}
+
+.minus {
+	background-image: url("../images/test/minus.svg");
+}
+
+.plus {
+	background-image: url("../images/test/plus.svg");
+}
+
+.remove {
+	background-image: url("../images/test/remove.svg");
 }
