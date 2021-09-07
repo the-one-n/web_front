@@ -1,0 +1,31 @@
+main {
+    background: -webkit-linear-gradient(to bottom right, #373b44, #1e4283);
+    background: linear-gradient(to bottom right, #373b44, #1e4283);
+    padding: 2rem;
+}
+
+.cart-heading {
+    font-size: 70px;
+    font-family: "DaysOne", serif;
+    border-bottom: 5px solid rgba(255, 255, 255, .5);
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+.cart-item__img {
+    max-width: 100%;
+}
+
+.cart-item__heading, .cart-item__count {
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+
+.cart-item__heading {
+    margin-bottom: 10px;
+}
+
+.cart-item__count {
+    color: rgba(255, 255, 255, .6);
+}
+
