@@ -32,8 +32,8 @@ button {
 
 header{
 	background: orange;
-	min-width: 20vw;
-	height:  100%;
+	min-width: 15vw;
+	height:  2000px;
 	color:  white;
 	z-index: 1488;
 }
@@ -108,7 +108,7 @@ margin-top: 10%;
 
 .nav-menu-item:hover .nav-menu-item__link,
 .nav-menu-item:hover .fa-icon {
-	color: #000;
+	color: black;
 }
 
 .nav-menu-item:hover::after {
@@ -125,7 +125,7 @@ margin-top: 10%;
 	padding: 0;
 	position: absolute;
 	right: -10.8rem;
-	top: 0;
+	top: -22rem;
 	visibility: hidden;
 	opacity: 0;
 	transform: scaleY(0);
@@ -171,21 +171,21 @@ margin-top: 10%;
 }
 
 main {
-	min-width: 65%;
+	min-width: 70vw;
 	color:  white;
-	height: 100%;
+	height: 2000px;
+	background:  black;
+}
+.swiper {
+  width: 700px;
+  height: 400px;
 }
 
-.main_img{
-	background: url("../images/main.jpg");
-	background-size: contain;
-	height: 100%;
-}
 
 footer{
-	background:  black;
-	min-width:  20%;
-	align-items: center;
+	background:  orange;
+	min-width:  15vw;
+	height: 2000px;
 }
 
 .icon {
