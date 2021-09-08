@@ -1,0 +1,21 @@
+.splide__slide {
+    width: 100%;
+    height: 100vh;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/*@media screen and (max-width: 1200px) {*/
+/*    .splide__slide {*/
+/*        height: 60vh;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 576px) {*/
+/*    .splide__slide {*/
+/*        height: 40vh;*/
+/*    }*/
+/*}*/
