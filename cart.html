@@ -1,170 +1,349 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>KonohaGakure</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="styles/style.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="styles/fonts/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<header>
+        <div class="logo">
+            <a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
+            <h1 class="heading">KonohaGakure</h1>
+        </div>
 
-    </head>
-    <body>      
-        <a href="#" id="stock">
-                            <div id="okno">
-                            </div>
-                        </a>
-            <header>
-                <div class="logo">
-                    <a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
-                    <h1>KonohaGakure</h1>
-                </div>
-
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-item__link" href="index.html">
-                                <i class="fas fa-home"></i>Главная
-                            </a>
-                        </li>
-                        <li class="nav-menu-item">
-                            <a class="nav-menu-item__link" href="#">
-                                <i class="fas fa-caret-square-right"></i>Меню
-                            </a>
-                            <ul class="submenu">
-                                <li class="submenu-item"><a class="submenu-item__link" href="#">Суши</a>
-                                    <ul class="submenu-sublist">
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#">Test</a>
-                                        </li>
-                                    </ul>
-                            </li>
-                                <li class="submenu-item"><a class="submenu-item__link" href="#">Роллы</a>
-                                    <ul class="submenu-sublist">
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                    </ul>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <i class="fa-icon fas fa-home-lg-alt nav-menu-item__icon"></i>
+                    <a class="nav-menu-item__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="nav-menu-item">
+                    <i class="fa-icon fas fa-utensils-alt nav-menu-item__icon"></i>
+                    <a class="nav-menu-item__link" href="#">
+                        Меню
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a class="submenu-item__link" href="#">Суши</a>
+                            <ul class="submenu-sublist">
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
                                 </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="#">Другое</a>
-                                    <ul class="submenu-sublist">
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="#"></a>
-                                        </li>
-                                    </ul>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#">Test</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-menu-item"
-                        >
-                        <a class="nav-menu-item__link" href="#stock"><i class="fas fa-dollar-sign"></i>Акции</a></li>
-
-                        <li class="nav-menu-item"><a class="nav-menu-item__link" href="contact.html"><i class="fas fa-phone-square-alt"></i>Новости</a></li>
-
-                        <li class="nav-menu-item"><a class="nav-menu-item__link" href="#"><i class="fas fa-images"></i>Галерея</a></li>
+                        <li class="submenu-item"><a class="submenu-item__link" href="#">Роллы</a>
+                            <ul class="submenu-sublist">
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu-item">
+                            <a class="submenu-item__link" href="#">Другое</a>
+                            <ul class="submenu-sublist">
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                                <li class="submenu-sublist-item">
+                                    <a class="submenu-sublist-item__link" href="#"></a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                </nav>
-            </header>
+                </li>
+                <li class="nav-menu-item">
+                    <i class="fa-icon fas fa-dollar-sign nav-menu-item__icon"></i>
+                    <a class="nav-menu-item__link" href="#stock">
+                        Акции
+                    </a>
+                </li>
+                <li class="nav-menu-item">
+                    <i class="fa-icon fas fa-phone-square-alt nav-menu-item__icon"></i>
+                    <a class="nav-menu-item__link" href="contact.html">
+                        Новости
+                    </a>
+                </li>
 
-            <main>
-                <div class="main_img">
+                <li class="nav-menu-item">
+                    <i class="fa-icon fas fa-images nav-menu-item__icon"></i>
+                    <a class="nav-menu-item__link" href="#">
+                        Галерея
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <h1 class="cart-heading">
+        Корзина
+    </h1>
+    <div class="cart-body">
+            <div class="cart-item">
+                            <div class="cart-item__shadowbox"></div>
+                            <img src="images/test/ac45b40242d8cecad308e3b5441f89ca.png" alt="" class="cart-item__img">
+                            <div class="cart-item__body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="cart-item__title">
+                                            Суши ебаные
+                                        </h2>
+                                        <h4 class="cart-item__count">
+                                            3 штуки пожрать хватит
+                                        </h4>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="cart-item__change-count">
+                                            <i class="minus cart-item__add"></i>
+                                            <span class="cart-item__add-count">1</span>
+                                            <i class="plus cart-item__remove"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3">
+                                        <span class="cart-item__total-cost align-self-end">5$</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="remove cart-item__delete"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <div class="cart-item">
+                            <div class="cart-item__shadowbox"></div>
+                            <img src="images/test/ac45b40242d8cecad308e3b5441f89ca.png" alt="" class="cart-item__img">
+                            <div class="cart-item__body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="cart-item__title">
+                                            Суши ебаные
+                                        </h2>
+                                        <h4 class="cart-item__count">
+                                            3 штуки пожрать хватит
+                                        </h4>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="cart-item__change-count">
+                                            <i class="minus cart-item__add"></i>
+                                            <span class="cart-item__add-count">1</span>
+                                            <i class="plus cart-item__remove"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3">
+                                        <span class="cart-item__total-cost align-self-end">5$</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="remove cart-item__delete"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <div class="cart-item">
+                            <div class="cart-item__shadowbox"></div>
+                            <img src="images/test/ac45b40242d8cecad308e3b5441f89ca.png" alt="" class="cart-item__img">
+                            <div class="cart-item__body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="cart-item__title">
+                                            Суши ебаные
+                                        </h2>
+                                        <h4 class="cart-item__count">
+                                            3 штуки пожрать хватит
+                                        </h4>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="cart-item__change-count">
+                                            <i class="minus cart-item__add"></i>
+                                            <span class="cart-item__add-count">1</span>
+                                            <i class="plus cart-item__remove"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3">
+                                        <span class="cart-item__total-cost align-self-end">5$</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="remove cart-item__delete"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <div class="cart-item">
+                            <div class="cart-item__shadowbox"></div>
+                            <img src="images/test/ac45b40242d8cecad308e3b5441f89ca.png" alt="" class="cart-item__img">
+                            <div class="cart-item__body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="cart-item__title">
+                                            Суши ебаные
+                                        </h2>
+                                        <h4 class="cart-item__count">
+                                            3 штуки пожрать хватит
+                                        </h4>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="cart-item__change-count">
+                                            <i class="minus cart-item__add"></i>
+                                            <span class="cart-item__add-count">1</span>
+                                            <i class="plus cart-item__remove"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3">
+                                        <span class="cart-item__total-cost align-self-end">5$</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="remove cart-item__delete"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <div class="cart-item">
+                            <div class="cart-item__shadowbox"></div>
+                            <img src="images/test/ac45b40242d8cecad308e3b5441f89ca.png" alt="" class="cart-item__img">
+                            <div class="cart-item__body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="cart-item__title">
+                                            Суши ебаные
+                                        </h2>
+                                        <h4 class="cart-item__count">
+                                            3 штуки пожрать хватит
+                                        </h4>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="cart-item__change-count">
+                                            <i class="minus cart-item__add"></i>
+                                            <span class="cart-item__add-count">1</span>
+                                            <i class="plus cart-item__remove"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-2"></div>
+                                    <div class="col-3">
+                                        <span class="cart-item__total-cost align-self-end">5$</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="remove cart-item__delete"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    <div class="cart-total cart-total--hidden">
+        <div class="cart-total__body">
+            <h1 class="cart-total__heading">
+                Общий счёт
+            </h1>
+            <h2 class="cart-total__price">
+                5.00$
+            </h2>
+            <button class="cart-total__order">
+                Оформить заказ
+            </button>
+        </div>
+    </div>
+</main>
+    <button class="cart-total__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+<!--<div class="col-sm-1">-->
+<!--            <footer>-->
+<!--                <div class="facebook">-->
 
-                    
+<!--                </div>-->
 
-                </div>
-            </main>
+<!--                <div class="tiktok">-->
 
-            <footer>
-                <div class="instagram">
-                    <a href="http://www.instagram.com"><img src="images/инст.jpg" alt="" width="100%" 
-   height="120" /></a>
-                </div>
+<!--                </div>-->
 
-                <div class="tiktok">
-                    <a href="http://www.tiktok.com"><img src="images/тик ток.jpg" alt="" width="100%" 
-   height="120" /></a>
-                </div>
+<!--                <div class="instagram">-->
 
-                <div class="facebook">
-                    <a href="http://www.facebook.com"><img src="images/инст.jpg" alt="" width="100%" 
-   height="120" /></a>
-                </div>
-
-                
-            </footer>
-    </body>
+<!--                </div>-->
+<!--            </footer>-->
+<!--</div>-->
+<script src="js/cart-total-toggle.js"></script>
+</body>
 </html>

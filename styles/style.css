@@ -19,6 +19,11 @@ ul, ol {
 	list-style: none;
 }
 
+button {
+	background: none;
+	border: 0;
+}
+
 .fa-icon {
 	display: inline-block;
 	font-size: 2vw;
@@ -91,6 +96,10 @@ margin-top: 10%;
 .nav-menu-item__link {
 	padding-left: 10px;
 	transition: all 0.5s ease;
+}
+
+.nav-menu-item__icon {
+	line-height: .8; !important;
 }
 
 .nav-menu-item:hover {
@@ -237,6 +246,18 @@ footer{
 	.submenu-item__link, .submenu-sublist-item__link {
 		font-size: 5vw;
 	}
+}
+
+.minus {
+	background-image: url("../images/test/minus.svg");
+}
+
+.plus {
+	background-image: url("../images/test/plus.svg");
+}
+
+.remove {
+	background-image: url("../images/test/remove.svg");
 }
 
 #stock {
