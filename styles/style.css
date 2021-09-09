@@ -1,5 +1,4 @@
 html, body {
-	height:vw;
 	margin: 0;
 	padding:  0;
 	width: 100%;
@@ -34,6 +33,7 @@ button {
 header{
 	background: orange;
 	color:  white;
+	height:  100vh;
 	z-index: 1488;
 }
 
@@ -176,14 +176,15 @@ margin-top: 5%;
 	display:  flex;
 	align-items: center;
 	margin-top:  5vw;
+	justify-content: space-around;
+
 }
 
 .header-footer-a{
 	text-decoration: none;
 	color: white;
 	font-size: 28px;
-	margin-right: 4vw;
-	margin-left: 1px;
+
 }
 
 .header-footer-a:hover{
@@ -215,6 +216,10 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
+	.header-footer {
+    flex-direction: column;
+    height: 20vh;
+    }
 	.heading {
 		display: none;
 	}
