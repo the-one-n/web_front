@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="styles/fonts/fonts.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
+        <h1 class="heading">KonohaGakure</h1>
+    </div>
+
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-home-lg-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="index.html">
+                    Главная
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-utensils-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#">
+                    Меню
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Популярное</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Инумаки» (17шт.)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Вулкан с лососем</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соевый соус</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Васаби</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Чили (сладкий)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">WOK и супы</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Лапша с курицей</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Вегетарианская лапша</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Свинина в остро-сладком соусе</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Уха с лососем и васаби</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Том Кха от Шефа</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Мисо от шефа</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Сеты</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Незуко» (32шт.)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Набор «Нацу» (32 шт.)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Набор «Джотаро» (24шт.)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Деку» (46шт.)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Берсерк» (20шт</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Запеченный сет «Ночной рейд'» (16шт</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Ахикабара» (40шт</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Коноха» (50шт</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Вспышка Адолы» (21шт.</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Коноха» (50шт</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Элдия» (16шт.</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Коноха» (50шт</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Крабовый» (30шт.</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Геней Рёдан» (28шт.</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Инумаки» (17шт.)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сет «Зецу» (16шт.)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item"><a class="submenu-item__link" href="#">Роллы</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сложные роллы</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Запечённые роллы</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Роллы Темпура</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Мини роллы</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Суши и гунканы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Ролл-доги и хот-доги</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Корн дог</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Гавайи дог</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Шадоу дог</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Чикен до</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Бургеры</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Ходячий замок</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Аста</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Луффи</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Бибоп</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Ичиго</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Пицца</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Конструктор</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Десерты</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сладкий ролл «Соблазн»</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Яблоки в темпуре с гранатовым соусом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Напитки</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Сок</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Квас</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Швепс</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Динамит Game</a>
+                            </li><li class="submenu-sublist-item">
+                            <a class="submenu-sublist-item__link" href="#">Кола</a>
+                        </li><li class="submenu-sublist-item">
+                            <a class="submenu-sublist-item__link" href="#">Фанта</a>
+                        </li><li class="submenu-sublist-item">
+                            <a class="submenu-sublist-item__link" href="#">Спрайт</a>
+                        </li><li class="submenu-sublist-item">
+                            <a class="submenu-sublist-item__link" href="#">Бонаква</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="#">Соусы и дополнительные приборы</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Имбирны</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Унаг</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Палочк</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соевый соус</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Маринованный имбирь</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Васаб</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Ваби-Саби</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Кунжутно-ореховый соус</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Барбекю</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Чили (сладкий)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Спайси (острый)</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Розовый соус</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Терияки</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Чесночный</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="#">Соус Сырный</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-dollar-sign nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#stock">
+                    Акции
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-phone-square-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="contact.html">
+                    Новости
+                </a>
+            </li>
+
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-images nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#">
+                    Галерея
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1 class="checkout-heading">
+        Оформление заказа
+    </h1>
+    <form method="post" enctype="multipart/form-data" class="checkout-products">
+        <div class="checkout-product">
+            <div class="checkout-product__cell">
+                <img src="images/test/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" class="checkout-product__img">
+            </div>
+            <div class="checkout-product__cell">
+                <h1 class="checkout-product__heading">Заказанное блюдо</h1>
+                <div class="checkout-product__count">
+                    <i class="icon minus checkout-product__add"></i>
+                    <input type="text" class="checkout-product__counter" value="1">
+                    <i class="icon plus checkout-product__remove"></i>
+                </div>
+            </div>
+            <div class="checkout-product__cell">
+                <div class="checkout-product__price">
+                    1000$
+                </div>
+            </div>
+            <div class="checkout-product__cell">
+                <div class="checkout-product__remove">
+                    <button class="icon remove"></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="checkout-personal-info">
+        <h1 class="checkout-personal-info__heading">Ваши Данные</h1>
+        <div class="checkout-personal-info__fields">
+            <div class="checkout-personal-info__field">
+                <label for="name" class="checkout-personal-info__label">Имя</label>
+                <input type="text" class="checkout-personal-info__input" id="name">
+            </div>
+            <div class="checkout-personal-info__field">
+                <label for="phone" class="checkout-personal-info__label">Телефон</label>
+                <input type="text" class="checkout-personal-info__input" id="phone">
+            </div>
+            <div class="checkout-personal-info__field">
+                <label for="address" class="checkout-personal-info__label">Адрес Доставки</label>
+                <input type="text" class="checkout-personal-info__input" id="address">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="instagram">
+        <a href="https://www.instagram.com"><img src="images/инст.jpg" alt="" width="100%" height="120"></a>
+    </div>
+    <div class="tiktok">
+        <a href="https://www.tiktok.com"><img src="images/тик ток.jpg" alt="" width="100%" height="120"></a>
+    </div>
+    <div class="facebook">
+        <a href="https://www.facebook.com"><img src="images/инст.jpg" alt="" width="100%" height="120"></a>
+    </div>
+</footer>
+</body>
+</html>
