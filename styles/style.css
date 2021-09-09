@@ -166,6 +166,8 @@ margin-top: 5%;
 
 .submenu-sublist-item__link, .submenu-item__link {
 	text-transform: none;
+	overflow-wrap: break-word;
+
 }
 
 .submenu-sublist-item__link:hover {
@@ -225,6 +227,18 @@ footer{
 	.heading {
 		display: none;
 	}
+	.submenu {
+	padding: 0;
+	position: absolute;
+	right: -10.8rem;
+	top: -14rem;
+	visibility: hidden;
+	opacity: 0;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all .5s ease-in-out;
+	z-index: 1;
+}
 	
 
 
