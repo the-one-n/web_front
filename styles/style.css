@@ -182,7 +182,13 @@ margin-top: 5%;
 	text-decoration: none;
 	color: white;
 	font-size: 28px;
-	margin-right: 3vw;
+	margin-right: 4vw;
+	margin-left: 1px;
+}
+
+.header-footer-a:hover{
+	color: black;
+	transition: .4s ease-in-out;
 }
 
 main {
