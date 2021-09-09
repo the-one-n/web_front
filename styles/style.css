@@ -30,15 +30,9 @@ button {
 	transition: all 0.5s ease;
 }
 
-.swiper {
-	width: 600px;
-	height: 300px;
-}
 
 header{
 	background: orange;
-	min-width: 15vw;
-	height:  2000px;
 	color:  white;
 	z-index: 1488;
 }
@@ -48,11 +42,12 @@ header{
 	text-align: center;
 	color: white;
 	padding: 10px;
+	height: 13vw;
 }
 
 .logo_img_img{
-	height: 50%;
-	width: 50%;
+	height: 75%;
+	width: 75%;
 }
 
 .heading {
@@ -63,7 +58,7 @@ header{
 
 
 nav {
-margin-top: 10%;
+margin-top: 5%;
 }
 
 .nav-menu {
@@ -72,7 +67,7 @@ margin-top: 10%;
 }
 
 .nav-menu-item {
-	padding: 20px 0 20px 20px;
+	padding: 10px 0 20px 20px;
 	z-index: 30;
 	display: flex;
 	position: relative;
@@ -130,7 +125,7 @@ margin-top: 10%;
 	padding: 0;
 	position: absolute;
 	right: -10.8rem;
-	top: -20rem;
+	top: -18rem;
 	visibility: hidden;
 	opacity: 0;
 	transform: scaleY(0);
@@ -175,10 +170,24 @@ margin-top: 10%;
 	display: block;
 }
 
+.header-footer{
+	background:  orange;
+	width: 15vw;
+	display:  flex;
+	align-items: center;
+	margin-top:  5vw;
+}
+
+.header-footer-a{
+	text-decoration: none;
+	color: white;
+	font-size: 28px;
+	margin-right: 3vw;
+}
+
 main {
 	min-width: 70vw;
 	color:  white;
-	height: 2000px;
 	background:  black;
 }
 .swiper {
@@ -190,7 +199,6 @@ main {
 footer{
 	background:  orange;
 	min-width:  15vw;
-	height: 2000px;
 }
 
 .icon {
