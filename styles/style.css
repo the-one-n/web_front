@@ -6,7 +6,9 @@ html, body {
 }
 
 body {
-	display:  flex;
+    display:  flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
@@ -223,6 +225,7 @@ footer{
 	.heading {
 		display: none;
 	}
+	
 
 
 	.nav-menu-item {
