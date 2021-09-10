@@ -8,7 +8,7 @@
 }
 
 .checkout-heading, .checkout-personal-info__heading {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: "DaysOne", serif;
     border-bottom: 5px solid rgba(225, 225, 225, .5);
     padding-bottom: 20px;
@@ -21,6 +21,8 @@
 .checkout-product {
     display: flex;
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(255, 255, 255, .4);
 }
 
 .checkout-product__cell {
@@ -40,6 +42,10 @@
     margin-left: 3vw;
 }
 
+.checkout-product__cell:last-child {
+    align-items: start;
+}
+
 .checkout-product__img {
     width: 100px;
     height: 100px;
@@ -52,11 +58,15 @@
     margin-bottom: 30px;
     width: 100%;
     text-align: left;
-    font-size: 2vh;
+    font-size: 1.4vw;
 }
 
 .checkout-product__price {
-    font-size: 3vh;
+    font-size: 1.7vw;
+}
+
+.checkout-product__price-sm-visible {
+    display: none;
 }
 
 .checkout-product__count {
@@ -65,16 +75,21 @@
     width: 20vw;
 }
 
-.checkout-product__add, .checkout-product__dellete, .checkout-product__remove {
+.checkout-product__add, .checkout-product__remove {
     width: 30px;
     height: 30px;
+}
+
+.checkout-product__delete {
+    width: 40px;
+    height: 40px;
 }
 
 .checkout-product__counter {
     margin: 0 10px;
     max-width: 40%;
     color: #fff;
-    font-size: 2vh;
+    font-size: 1.5vw;
     font-family: "DaysOne", sans-serif;
     text-align: center;
 }
@@ -83,55 +98,192 @@
     margin-top: 38px;
 }
 
-.checkout-personal-info__fields {
+.checkout-fields {
     margin-top: 40px;
 }
 
-.checkout-personal-info__field {
+.checkout-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
-.checkout-personal-info__label {
-    font-size: 2.6vh;
+.checkout-field--horizontal {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkout-field--horizontal .checkout-label {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.checkout-label {
+    font-size: 1.4vw;
     font-family: "Roboto", serif;
     margin-bottom: 10px;
 }
 
-.checkout-personal-info__input {
+.checkout-input {
     height: 40px;
     max-width: 40%;
     border-bottom: 5px solid rgba(225, 225, 225, .5);
-    font-size: 2.4vh;
+    font-size: 1.3vw;
     transition: .7s ease-in-out;
+}
+
+.checkout-input-box {
+    width: 50px;
+    border-bottom: 0;
+    margin: 0;
 }
 
 .checkout-personal-info__input:focus {
     border-color: #fff;
 }
 
-@media screen and (max-width:  720px) {
-    .checkout-product__price{
-        display: none;
+.checkout-terms input {
+    margin-bottom: 0;
+}
+
+.checkout-proceed__confirm {
+    display: block;
+    text-align: center;
+    font-family: 'DaysOne', sans-serif;
+    width: 15vw;
+    font-size: 1.3vw;
+    background-color: darkblue;
+    padding: 15px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .checkout-product__delete {
+        width: 30px;
+        height: 30px;
     }
-    .checkout-product__remove{
-        display: none;
+
+    .checkout-heading {
+        font-size: 2.5vw;
+    }
+
+    .checkout-product__heading, .checkout-label {
+        font-size: 2vw;
+    }
+
+    .checkout-input {
+        max-width: 50%;
+        font-size: 2vw;
+    }
+
+    .checkout-input-box {
+        width: 3vw;
+        height: 3vw;
     }
 }
-@media screen and (max-width:  400px) {
-    .checkout-product__price{
-        display: none;
+
+@media screen and (max-width: 720px) {
+    .checkout-product__heading, .checkout-label {
+        font-size: 2.5vw;
     }
-    .checkout-product__remove{
-        display: none;
+
+    .checkout-heading {
+        font-size: 3.5vw;
+    }
+
+    .checkout-label {
+        font-size: 2.7vw;
+    }
+
+    .checkout-input {
+        max-width: 60%;
+        font-size: 2.5vw;
+    }
+
+    .checkout-product__cell:not(:first-child),
+    .checkout-product__cell:not(:last-of-type) {
+        margin-right: 4vw;
+    }
+
+    .checkout-product__price,
+    .checkout-product__counter {
+        font-size: 3vw;
+    }
+
+    .checkout-proceed__confirm {
+        width: 200px;
+        font-size: 2.5vw;
     }
 }
-@media screen and (max-width:  1200px) {
-    .checkout-product__price{
+
+@media screen and (max-width: 500px) {
+    .checkout-product__heading, .checkout-label {
+        font-size: 3vw;
+    }
+
+    .checkout-heading {
+        font-size: 6vw;
+    }
+
+    .checkout-product__cell {
+        margin-right: 1vw;
+        max-width: 50%;
+    }
+
+    .checkout-product__heading {
+        margin-bottom: 15px;
+    }
+
+    .checkout-product__img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .checkout-product__cell--sm-hidden {
         display: none;
     }
-    .checkout-product__remove{
-        display: none;
+
+    .checkout-product__price-sm-visible {
+        display: block;
+        width: 100%;
+        font-size: 4vw;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .checkout-product__count {
+        width: 100%;
+    }
+
+    .checkout-product__heading {
+        font-size: 3.5vw;
+    }
+
+    .checkout-product__add,
+    .checkout-product__remove {
+        width: 25px;
+        height: 25px;
+    }
+
+    .checkout-label {
+        font-size: 4vw;
+    }
+
+    .checkout-input {
+        max-width: 70%;
+        font-size: 4vw;
+    }
+
+    .checkout-input-box {
+        width: 20px;
+        height: 20px;
+    }
+
+    .checkout-proceed__confirm {
+        width: 200px;
+        font-size: 3vw;
     }
 }
