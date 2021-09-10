@@ -242,6 +242,8 @@ footer{
 	.header-footer {
 		flex-direction: column;
 		height: 20vh;
+			justify-content: space-around;
+
 	}
 	footer{
 		display: none;
