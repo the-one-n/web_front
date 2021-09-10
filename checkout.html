@@ -11,106 +11,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-<header>
-                <div class="logo">
-                    <a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
-                    <h1 class="heading">KonohaGakure</h1>
-                </div>
+<button class="header-toggle collapsed-window-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+<header class="collapsed-window collapsed-window--collapsed">
+    <div class="logo">
+        <a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
+        <h1 class="heading">KonohaGakure</h1>
+    </div>
 
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-home-lg-alt nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="index.html">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-utensils-alt nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="#">
-                                Меню
-                            </a>
-                            <ul class="submenu">
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Популярное</a>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-home-lg-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="index.html">
+                    Главная
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-utensils-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#">
+                    Меню
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Популярное</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">WOK и супы</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Сеты</a>
+                    </li>
+                    <li class="submenu-item"><a class="submenu-item__link" href="checkout.html">Роллы</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Сложные роллы</a>
                             </li>
-                            <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">WOK и супы</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Сеты</a>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Запечённые роллы</a>
                             </li>
-                            <li class="submenu-item"><a class="submenu-item__link" href="checkout.html">Роллы</a>
-                                    <ul class="submenu-sublist">
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Сложные роллы</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Запечённые роллы</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Роллы Темпура</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Мини роллы</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Суши и гунканы</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Ролл-доги и хот-доги</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Пицца</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Десерты</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Напитки</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Соусы и дополнительные приборы</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-dollar-sign nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="#stock">
-                                Акции
-                            </a>
-                        </li>
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-phone-square-alt nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="contact.html">
-                                Новости
-                            </a>
-                        </li>
-
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-images nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="#">
-                                Галерея
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="header-footer">
-                    <div class="header-footer-item">
-                        <a class="header-footer-a" href="account.html"><i class="fas fa-user nav-menu-item__icon"></i></a>
-                    </div>
-                    <div class="header-footer-item">
-                        <a class="header-footer-a" href="cart.html"><i class="fas fa-shopping-cart nav-menu-item__icon"></i></a>
-                    </div>
-                    <div class="header-footer-item">
-                        <a class="header-footer-a" href="delivery.html"><i class="fas fa-truck nav-menu-item__icon"></i></a>
-                    </div>
-                </div>
-                </nav>
-
-
-            </header>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Роллы Темпура</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Мини роллы</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Суши и гунканы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Ролл-доги и хот-доги</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Пицца</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Десерты</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Напитки</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Соусы и дополнительные приборы</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-dollar-sign nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#stock">
+                    Акции
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-phone-square-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="contact.html">
+                    Новости
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-images nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#">
+                    Галерея
+                </a>
+            </li>
+        </ul>
+        <div class="header-footer">
+            <div class="header-footer-item">
+                <a class="header-footer-a" href="account.html"><i class="fas fa-user nav-menu-item__icon"></i></a>
+            </div>
+            <div class="header-footer-item">
+                <a class="header-footer-a" href="cart.html"><i class="fas fa-shopping-cart nav-menu-item__icon"></i></a>
+            </div>
+            <div class="header-footer-item">
+                <a class="header-footer-a" href="delivery.html"><i class="fas fa-truck nav-menu-item__icon"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
 <main>
     <div class="fixmain">
     <h1 class="checkout-heading">
@@ -123,21 +126,73 @@
             </div>
             <div class="checkout-product__cell">
                 <h1 class="checkout-product__heading">Заказанное блюдо</h1>
+                <div class="checkout-product__price checkout-product__price-sm-visible">
+                    1000$
+                </div>
                 <div class="checkout-product__count">
-                    <i class="icon minus checkout-product__delete"></i>
+                    <i class="icon minus checkout-product__remove"></i>
                     <input type="text" class="checkout-product__counter" value="1">
                     <i class="icon plus checkout-product__add"></i>
                 </div>
             </div>
-            <div class="checkout-product__cell">
+            <div class="checkout-product__cell checkout-product__cell--sm-hidden">
                 <div class="checkout-product__price">
                     1000$
                 </div>
             </div>
             <div class="checkout-product__cell">
-                <div class="checkout-product__remove">
-                    <button class="icon remove"></button>
+                <button class="checkout-product__delete icon remove">
+                </button>
+            </div>
+        </div>
+        <div class="checkout-product">
+            <div class="checkout-product__cell">
+                <img src="images/test/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" class="checkout-product__img">
+            </div>
+            <div class="checkout-product__cell">
+                <h1 class="checkout-product__heading">Заказанное блюдо</h1>
+                <div class="checkout-product__price checkout-product__price-sm-visible">
+                    1000$
                 </div>
+                <div class="checkout-product__count">
+                    <i class="icon minus checkout-product__remove"></i>
+                    <input type="text" class="checkout-product__counter" value="1">
+                    <i class="icon plus checkout-product__add"></i>
+                </div>
+            </div>
+            <div class="checkout-product__cell checkout-product__cell--sm-hidden">
+                <div class="checkout-product__price">
+                    1000$
+                </div>
+            </div>
+            <div class="checkout-product__cell">
+                <button class="checkout-product__delete icon remove">
+                </button>
+            </div>
+        </div>
+        <div class="checkout-product">
+            <div class="checkout-product__cell">
+                <img src="images/test/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="" class="checkout-product__img">
+            </div>
+            <div class="checkout-product__cell">
+                <h1 class="checkout-product__heading">Заказанное блюдо</h1>
+                <div class="checkout-product__price checkout-product__price-sm-visible">
+                    1000$
+                </div>
+                <div class="checkout-product__count">
+                    <i class="icon minus checkout-product__remove"></i>
+                    <input type="text" class="checkout-product__counter" value="1">
+                    <i class="icon plus checkout-product__add"></i>
+                </div>
+            </div>
+            <div class="checkout-product__cell checkout-product__cell--sm-hidden">
+                <div class="checkout-product__price">
+                    1000$
+                </div>
+            </div>
+            <div class="checkout-product__cell">
+                <button class="checkout-product__delete icon remove">
+                </button>
             </div>
         </div>
     </form>
@@ -161,29 +216,29 @@
     <div class="checkout-payment">
         <h1 class="checkout-heading">Способ оплаты</h1>
         <div class="checkout-fields">
-            <div class="checkout-field">
-                <label for="card" class="checkout-label">Банковский перевод</label>
+            <div class="checkout-field checkout-field--horizontal">
                 <input type="radio" class="checkout-input checkout-input-box" name="payment" id="card">
+                <label for="card" class="checkout-label">Банковский перевод</label>
             </div>
-            <div class="checkout-field">
-                <label for="cash" class="checkout-label">Оплата наличными</label>
+            <div class="checkout-field checkout-field--horizontal">
                 <input type="radio" class="checkout-input checkout-input-box" name="payment" id="cash">
+                <label for="cash" class="checkout-label">Оплата наличными</label>
             </div>
         </div>
     </div>
     <div class="checkout-proceed">
         <h1 class="checkout-heading">Подтверждение</h1>
         <div class="checkout-fields">
-            <div class="checkout-terms">
+            <div class="checkout-field checkout-field--horizontal">
                 <input type="checkbox" id="terms" class="checkout-input checkout-input-box" name="terms-of-service">
                 <label for="terms" class="checkout-label">
                     Я прочитал и ознакомился с <a href="#">Условия соглашения</a>
                 </label>
             </div>
             <div class="checkout-field">
-                <button class="checkout-proceed__confirm">
+                <a class="checkout-proceed__confirm">
                     Оформить заказ
-                </button>
+                </a>
             </div>
         </div>
     </div>
