@@ -50,7 +50,7 @@
     margin-bottom: 30px;
     width: 100%;
     text-align: left;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .checkout-product__price {
@@ -107,4 +107,10 @@
 
 .checkout-personal-info__input:focus {
     border-color: #fff;
+}
+
+@media screen and (max-width:  720px) {
+    .checkout-product__remove{
+        display: none;
+    }
 }
