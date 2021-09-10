@@ -10,12 +10,12 @@
 
 @media screen and (max-width: 1200px) {
    .splide__slide {
-       height: 60vh;
+       height: 100vh;
     }
 }
 
 @media screen and (max-width: 576px) {
     .splide__slide {
-        height: 40vh;
+        height: 100vh;
    }
 }
