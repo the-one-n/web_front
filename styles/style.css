@@ -35,7 +35,9 @@ button, input {
 
 header{
 	background: orange;
-	color:  white;
+	background-image: url("../images/sushi.gif");
+	background-size: 100% 100%	;
+	color:  black;
 	height:  100vh;
 	z-index: 1500;
 	min-width: 15vw;
@@ -57,6 +59,7 @@ header{
 .heading {
 	font-family: 'Pacifico', serif;
 	font-size: 2vw;
+	color:  black;
 }
 
 
@@ -88,14 +91,22 @@ margin-top: 5%;
 	transition: width .5s ease-in-out;
 }
 
-.nav-menu-item__link, .submenu-item__link, .submenu-sublist-item__link {
+.nav-menu-item__link {
 	font-size: 1vw;
-	color:  white;
+	color:  black;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	font-family: 'Pacifico', serif;
 }
+ .submenu-sublist-item__link, .submenu-item__link{
+ 	font-size: 1vw;
+	color:  white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	font-family: 'Pacifico', serif;
+ }
 
 .nav-menu-item__link {
 	padding-left: 10px;
@@ -194,12 +205,12 @@ margin-top: 5%;
 
 .header-footer-a{
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-size: 2vw;
 }
 
 .header-footer-a:hover{
-	color: black;
+	color: orangered;
 	transition: .4s ease-in-out;
 }
 
@@ -219,6 +230,8 @@ main {
 
 footer{
 	background:  orange;
+	background-image: url("../images/bg.gif");
+	background-size: 100% 100%	;
 	min-width:  15vw;
 }
 
