@@ -38,6 +38,7 @@ header{
 	color:  white;
 	height:  100vh;
 	z-index: 1500;
+	min-width: 15vw;
 }
 
 
