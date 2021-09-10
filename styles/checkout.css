@@ -29,7 +29,7 @@
 }
 
 .checkout-product__cell:not(:nth-child(1)) {
-    margin-right: 5vw;
+    margin-right: 10vw;
 }
 
 .checkout-product__cell:nth-child(2) {
@@ -110,6 +110,9 @@
 }
 
 @media screen and (max-width:  720px) {
+    .checkout-product__price{
+        display: none;
+    }
     .checkout-product__remove{
         display: none;
     }
