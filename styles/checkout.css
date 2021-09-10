@@ -3,7 +3,9 @@
     position: relative;
 }
 
-
+.logo{
+    height: 13vw;
+}
 
 .checkout-heading, .checkout-personal-info__heading {
     font-size: 1.5vw;
@@ -118,6 +120,14 @@
     }
 }
 @media screen and (max-width:  400px) {
+    .checkout-product__price{
+        display: none;
+    }
+    .checkout-product__remove{
+        display: none;
+    }
+}
+@media screen and (max-width:  1200px) {
     .checkout-product__price{
         display: none;
     }

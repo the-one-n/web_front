@@ -203,7 +203,7 @@ margin-top: 5%;
 }
 
 main {
-	min-width: 70vw;
+	max-width: 70vw;
 	color:  white;
 	background:  black;
 }
@@ -215,7 +215,7 @@ main {
 
 footer{
 	background:  orange;
-	min-width:  15vw;
+	max-width:  15vw;
 }
 
 .icon {
