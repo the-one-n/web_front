@@ -203,7 +203,7 @@ margin-top: 5%;
 }
 
 main {
-	max-width: 70vw;
+	min-width: 70vw;
 	color:  white;
 	background:  black;
 }
@@ -215,7 +215,7 @@ main {
 
 footer{
 	background:  orange;
-	max-width:  15vw;
+	min-width:  15vw;
 }
 
 .icon {
@@ -377,15 +377,15 @@ footer{
 
 .instagram{
 	width: 100%;
-	height: 120px;
+	height: 90px;
 }
 
 .tiktok{
 	width: 100%;
-	height: 120px;
+	height: 90px;
 }
 
 .facebook{
 	width: 100%;
-	height: 120px;
+	height: 90px;
 }
