@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Корзина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cart.css">
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap-grid.css">
     <link rel="stylesheet" href="styles/fonts/fonts.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/collapsed-window-toggle.css">
 </head>
 <body>
 <header>
@@ -208,7 +209,7 @@
             </div>
         </div>
 </main>
-<div class="cart-total cart-total--hidden">
+<div class="cart-total collapsed-window collapsed-window--collapsed">
     <div class="cart-total__body">
         <h1 class="cart-total__heading">
             Общий счёт
@@ -221,7 +222,7 @@
         </button>
     </div>
 </div>
-<button class="cart-total__toggle">
+<button class="collapsed-window-toggle cart-total__toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -242,6 +243,6 @@
 <!--                </div>-->
 <!--            </footer>-->
 <!--</div>-->
-<script src="js/cart-total-toggle.js"></script>
+<script src="js/collapsed-window-toggle.js"></script>
 </body>
 </html>

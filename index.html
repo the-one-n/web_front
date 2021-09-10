@@ -9,17 +9,24 @@
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="vendor/splide/css/splide.min.css">
 		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/collapsed-window-toggle.css">
 	</head>
 	<body>		
 		<a href="#" id="stock">
 			<div id="okno">
 			</div>
 		</a>
-			<header>
+		<button class="header-toggle collapsed-window-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+			<header class="collapsed-window collapsed-window--collapsed">
 				<div class="logo">
 					<a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
-					<h1 class="heading">KonohaGakure</h1>
 				</div>
+				<h1 class="heading">KonohaGakure</h1>
 
 				<nav>
 					<ul class="nav-menu">
@@ -153,5 +160,6 @@
 			</footer>
 		<script src="vendor/splide/js/splide.min.js"></script>
 		<script src="js/splide.js"></script>
+		<script src="js/collapsed-window-toggle.js"></script>
 	</body>
 </html>
