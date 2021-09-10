@@ -184,7 +184,6 @@ margin-top: 5%;
 
 .header-footer{
 	background:  orange;
-	width: 15vw;
 	display:  flex;
 	align-items: center;
 	margin-top: 8vw;
@@ -242,8 +241,6 @@ footer{
 	.header-footer {
 		flex-direction: column;
 		height: 20vh;
-			justify-content: space-around;
-
 	}
 	footer{
 		display: none;
