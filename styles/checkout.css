@@ -83,32 +83,59 @@
     margin-top: 38px;
 }
 
-.checkout-personal-info__fields {
+.checkout-fields {
     margin-top: 40px;
 }
 
-.checkout-personal-info__field {
+.checkout-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
-.checkout-personal-info__label {
+.checkout-label {
     font-size: 2.6vh;
     font-family: "Roboto", serif;
     margin-bottom: 10px;
 }
 
-.checkout-personal-info__input {
+.checkout-input {
     height: 40px;
     max-width: 40%;
     border-bottom: 5px solid rgba(225, 225, 225, .5);
-    font-size: 2.4vh;
+    font-size: 2.4vw;
     transition: .7s ease-in-out;
+}
+
+.checkout-input-box {
+    width: 50px;
+    border-bottom: 0;
+    margin: 0;
 }
 
 .checkout-personal-info__input:focus {
     border-color: #fff;
+}
+
+.checkout-terms {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.checkout-terms input {
+    margin-bottom: 0;
+}
+
+.checkout-proceed__confirm {
+    width: 15vw;
+    font-size: 1.5vw;
+    background-color: darkblue;
+    padding: 15px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:  720px) {

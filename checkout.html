@@ -111,7 +111,8 @@
 
 
             </header>
-<main><div class="fixmain">
+<main>
+    <div class="fixmain">
     <h1 class="checkout-heading">
         Оформление заказа
     </h1>
@@ -123,7 +124,7 @@
             <div class="checkout-product__cell">
                 <h1 class="checkout-product__heading">Заказанное блюдо</h1>
                 <div class="checkout-product__count">
-                    <i class="icon minus checkout-product__dellete"></i>
+                    <i class="icon minus checkout-product__delete"></i>
                     <input type="text" class="checkout-product__counter" value="1">
                     <i class="icon plus checkout-product__add"></i>
                 </div>
@@ -141,22 +142,52 @@
         </div>
     </form>
     <div class="checkout-personal-info">
-        <h1 class="checkout-personal-info__heading">Ваши Данные</h1>
-        <div class="checkout-personal-info__fields">
-            <div class="checkout-personal-info__field">
-                <label for="name" class="checkout-personal-info__label">Имя</label>
-                <input type="text" class="checkout-personal-info__input" id="name">
+        <h1 class="checkout-heading">Ваши Данные</h1>
+        <div class="checkout-fields">
+            <div class="checkout-field">
+                <label for="name" class="checkout-label">Имя</label>
+                <input type="text" class="checkout-input" name="name" id="name">
             </div>
-            <div class="checkout-personal-info__field">
-                <label for="phone" class="checkout-personal-info__label">Телефон</label>
-                <input type="text" class="checkout-personal-info__input" id="phone">
+            <div class="checkout-field">
+                <label for="phone" class="checkout-label">Телефон</label>
+                <input type="text" class="checkout-input" name="phone" id="phone">
             </div>
-            <div class="checkout-personal-info__field">
-                <label for="address" class="checkout-personal-info__label">Адрес Доставки</label>
-                <input type="text" class="checkout-personal-info__input" id="address">
+            <div class="checkout-field">
+                <label for="address" class="checkout-label">Адрес Доставки</label>
+                <input type="text" class="checkout-input" name="address" id="address">
             </div>
         </div>
-    </div></div>
+    </div>
+    <div class="checkout-payment">
+        <h1 class="checkout-heading">Способ оплаты</h1>
+        <div class="checkout-fields">
+            <div class="checkout-field">
+                <label for="card" class="checkout-label">Банковский перевод</label>
+                <input type="radio" class="checkout-input checkout-input-box" name="payment" id="card">
+            </div>
+            <div class="checkout-field">
+                <label for="cash" class="checkout-label">Оплата наличными</label>
+                <input type="radio" class="checkout-input checkout-input-box" name="payment" id="cash">
+            </div>
+        </div>
+    </div>
+    <div class="checkout-proceed">
+        <h1 class="checkout-heading">Подтверждение</h1>
+        <div class="checkout-fields">
+            <div class="checkout-terms">
+                <input type="checkbox" id="terms" class="checkout-input checkout-input-box" name="terms-of-service">
+                <label for="terms" class="checkout-label">
+                    Я прочитал и ознакомился с <a href="#">Условия соглашения</a>
+                </label>
+            </div>
+            <div class="checkout-field">
+                <button class="checkout-proceed__confirm">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
 </main>
 <footer>
                 <div class="instagram">
