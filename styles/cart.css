@@ -113,7 +113,7 @@ main {
     right: 0;
     font-family: 'DaysOne', serif;
     height: 100%;
-    width: 40%;
+    width: 500px;
     background-color: rgb(255, 255, 255);
     box-shadow:  rgba(0, 0, 0, 0.1) -16px 20px 15px 0;
     transition: .7s ease-out;
@@ -121,7 +121,7 @@ main {
 }
 
 .cart-total--hidden {
-    right: -40%
+    right: -60%
 }
 
 .cart-total__body {
