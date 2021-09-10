@@ -5,110 +5,116 @@
     <title>Корзина</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/fonts/fonts.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-grid.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cart.css">
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-grid.css">
-    <link rel="stylesheet" href="styles/fonts/fonts.css">
     <link rel="stylesheet" href="styles/collapsed-window-toggle.css">
 </head>
 <body>
-<header>
+<button class="collapsed-window-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+<header class="collapsed-window collapsed-window--collapsed">
     <div class="logo">
         <a href="index.html" class="logo_img"><img src="images/logo.png" alt=""  class="logo_img_img"/></a>
-        <h1 class="heading">KonohaGakure</h1>
     </div>
+    <h1 class="heading">KonohaGakure</h1>
 
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-home-lg-alt nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="index.html">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-utensils-alt nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="#">
-                                Меню
-                            </a>
-                            <ul class="submenu">
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Популярное</a>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-home-lg-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="index.html">
+                    Главная
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-utensils-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#">
+                    Меню
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Популярное</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">WOK и супы</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Сеты</a>
+                    </li>
+                    <li class="submenu-item"><a class="submenu-item__link" href="checkout.html">Роллы</a>
+                        <ul class="submenu-sublist">
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Сложные роллы</a>
                             </li>
-                            <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">WOK и супы</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Сеты</a>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Запечённые роллы</a>
                             </li>
-                            <li class="submenu-item"><a class="submenu-item__link" href="checkout.html">Роллы</a>
-                                    <ul class="submenu-sublist">
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Сложные роллы</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Запечённые роллы</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Роллы Темпура</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Мини роллы</a>
-                                        </li>
-                                        <li class="submenu-sublist-item">
-                                            <a class="submenu-sublist-item__link" href="checkout.html">Суши и гунканы</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Ролл-доги и хот-доги</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Пицца</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Десерты</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Напитки</a>
-                                </li>
-                                <li class="submenu-item">
-                                    <a class="submenu-item__link" href="checkout.html">Соусы и дополнительные приборы</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-dollar-sign nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="#stock">
-                                Акции
-                            </a>
-                        </li>
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-phone-square-alt nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="contact.html">
-                                Новости
-                            </a>
-                        </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Роллы Темпура</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Мини роллы</a>
+                            </li>
+                            <li class="submenu-sublist-item">
+                                <a class="submenu-sublist-item__link" href="checkout.html">Суши и гунканы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Ролл-доги и хот-доги</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Пицца</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Десерты</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Напитки</a>
+                    </li>
+                    <li class="submenu-item">
+                        <a class="submenu-item__link" href="checkout.html">Соусы и дополнительные приборы</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-dollar-sign nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#stock">
+                    Акции
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-phone-square-alt nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="contact.html">
+                    Новости
+                </a>
+            </li>
 
-                        <li class="nav-menu-item">
-                            <i class="fa-icon fas fa-images nav-menu-item__icon"></i>
-                            <a class="nav-menu-item__link" href="#">
-                                Галерея
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="header-footer">
-                    <div class="header-footer-item">
-                        <a class="header-footer-a" href="account.html"><i class="fas fa-user nav-menu-item__icon"></i></a>
-                    </div>
-                    <div class="header-footer-item">
-                        <a class="header-footer-a" href="cart.html"><i class="fas fa-shopping-cart nav-menu-item__icon"></i></a>
-                    </div>
-                    <div class="header-footer-item">
-                        <a class="header-footer-a" href="delivery.html"><i class="fas fa-truck nav-menu-item__icon"></i></a>
-                    </div>
-                </div>
-                </nav>
+            <li class="nav-menu-item">
+                <i class="fa-icon fas fa-images nav-menu-item__icon"></i>
+                <a class="nav-menu-item__link" href="#">
+                    Галерея
+                </a>
+            </li>
+        </ul>
+        <div class="header-footer">
+            <div class="header-footer-item">
+                <a class="header-footer-a" href="account.html"><i class="fas fa-user nav-menu-item__icon"></i></a>
+            </div>
+            <div class="header-footer-item">
+                <a class="header-footer-a" href="cart.html"><i class="fas fa-shopping-cart nav-menu-item__icon"></i></a>
+            </div>
+            <div class="header-footer-item">
+                <a class="header-footer-a" href="delivery.html"><i class="fas fa-truck nav-menu-item__icon"></i></a>
+            </div>
+        </div>
+    </nav>
 
 
 </header>

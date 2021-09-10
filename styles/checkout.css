@@ -3,10 +3,6 @@
     position: relative;
 }
 
-.logo{
-    height: 13vw;
-}
-
 .checkout-heading, .checkout-personal-info__heading {
     font-size: 2vw;
     font-family: "DaysOne", serif;

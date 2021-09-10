@@ -33,14 +33,23 @@ button, input {
 }
 
 
-header{
-	background: orange;
-	background-image: url("../images/sushi.gif");
+header {
+	background: orange url("../images/sushi.gif");
+	position: fixed;
+	top: 0;
+	left: 0;
 	background-size: 100% 100%	;
 	color:  black;
 	height:  100vh;
 	z-index: 1500;
 	min-width: 15vw;
+}
+
+main {
+	margin-left: 15vw;
+	color:  white;
+	background:  black;
+	min-width: 70vw;
 }
 
 
@@ -60,6 +69,8 @@ header{
 	font-family: 'Pacifico', serif;
 	font-size: 2vw;
 	color:  black;
+	width: 100%;
+	text-align: center;
 }
 
 
@@ -195,7 +206,6 @@ margin-top: 5%;
 }
 
 .header-footer{
-	background:  orange;
 	display:  flex;
 	align-items: center;
 	margin-top: 8vw;
@@ -214,11 +224,6 @@ margin-top: 5%;
 	transition: .4s ease-in-out;
 }
 
-main {
-	min-width: 70vw;
-	color:  white;
-	background:  black;
-}
 .swiper {
   width: 700px;
   height: 400px;
@@ -246,6 +251,10 @@ footer{
 }
 
 @media screen and (max-width: 1200px) {
+	main {
+		width: 100vw;
+	}
+
 	.nav-menu-item {
 		padding-left: 0;
 	}
@@ -277,12 +286,17 @@ footer{
 }
 
 @media screen and (max-width: 720px) {
+	main {
+		margin-left: 0;
+	}
+
 	.header-toggle {
 		display: block;
 	}
 
 	header {
 		min-width: 30vw;
+		transition: .7s ease-in-out;
 	}
 
 	 .logo {
@@ -291,24 +305,19 @@ footer{
 		 margin: auto;
 	 }
 
-	.header-footer {
-		flex-direction: column;
-		height: 20vh;
-	}
+	 .nav-menu {
+		 padding-left: 20px;
+	 }
+
 	footer{
 		display: none;
 	}
 
-	header {
-		position: absolute;
-		transition: .7s ease-in-out;
+	header.collapsed-window--collapsed {
+		left: -50% !important;
 	}
 
-	.collapsed-window--collapsed {
-		left: -200px !important;
-	}
-
-	.collapsed-window {
+	header.collapsed-window {
 		left: 0;
 	}
 
@@ -367,9 +376,26 @@ footer{
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+	header {
+		width: 45vw;
+	}
+
+	.logo {
+		width: 30vw;
+		height: 30vw;
+	}
+
+	.heading {
+		font-size: 5vw;
+	}
+
+	.nav-menu-item__link {
+		font-size: 3vw;
+	}
+
 	.nav-menu-item__icon {
-		font-size: 10vw;
+		font-size: 8vw;
 	}
 
 	.submenu, .submenu-sublist {

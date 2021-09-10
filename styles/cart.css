@@ -2,7 +2,6 @@ main {
     background: rgb(255, 255, 255);
     background-size: 100% 100%;
     padding: 2rem 0 2rem 2rem;
-    height: 100vh;
     position: relative;
     color: #000;
 }
@@ -120,8 +119,8 @@ main {
     z-index: 80;
 }
 
-.collapsed-window--collapsed {
-    right: -100%
+.cart-total.collapsed-window--collapsed {
+    right: -100%;
 }
 
 .cart-total__body {
@@ -222,8 +221,8 @@ main {
         width: 100%;
     }
 
-    .cart-total--hidden {
-        right: -100%
+    .cart-total.collapsed-window--collapsed {
+        right: -100%;
     }
 
     .cart-total__price {
