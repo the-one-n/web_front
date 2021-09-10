@@ -63,7 +63,7 @@
     width: 20vw;
 }
 
-.checkout-product__add, .checkout-product__remove {
+.checkout-product__add, .checkout-product__dellete, .checkout-product__remove {
     width: 30px;
     height: 30px;
 }
