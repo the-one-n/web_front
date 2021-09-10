@@ -229,6 +229,9 @@ footer{
 	.submenu {
 		top: -20vw;
 	}
+	footer{
+		display:  none;
+	}
 
 	.submenu-item__link, .submenu-sublist-item__link {
 		font-size: 1rem;
@@ -239,6 +242,9 @@ footer{
 	.header-footer {
 		flex-direction: column;
 		height: 20vh;
+	}
+	footer{
+		display: none;
 	}
 
 	.heading {
