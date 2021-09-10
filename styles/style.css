@@ -213,6 +213,9 @@ main {
   height: 400px;
 }
 
+.main_footer{
+	display: none;
+}
 
 footer{
 	background:  orange;
@@ -232,7 +235,24 @@ footer{
 	footer{
 		display:  none;
 	}
+	header{
+		display: none;
+	}
+	main{
+		background: orange;
+	}
+	.splide__slide img{
+		width: 100%;
+		height: 75vh;
+	}
+	.splide__slide {
+    width: 100%;
+    height: 75vh;
+}
 
+	.main_footer{
+		display: block;
+	}
 	.submenu-item__link, .submenu-sublist-item__link {
 		font-size: 1rem;
 	}
