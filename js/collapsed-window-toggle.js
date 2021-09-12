@@ -1,14 +1,18 @@
 (function() {
-    const collapsedWindowToggle = document.querySelector('.collapsed-window-toggle');
-    const collapsedWindow = document.querySelector('.collapsed-window');
+    const windowsToggles = document.querySelectorAll('[data-collapsed-window-toggle-id]');
 
-    collapsedWindowToggle.addEventListener('click', () => {
-        if (collapsedWindow.classList.contains('collapsed-window--collapsed')) {
-            collapsedWindow.classList.remove('collapsed-window--collapsed');
-            collapsedWindowToggle.classList.add('open');
-        } else {
-            collapsedWindow.classList.add('collapsed-window--collapsed');
-            collapsedWindowToggle.classList.remove('open');
-        }
+    windowsToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const collapsedWindow = document.querySelector('[data-collapsed-window-id='
+                + toggle.getAttribute('data-collapsed-window-toggle-id') + ']');
+
+            if (collapsedWindow.classList.contains('collapsed-window--collapsed')) {
+                collapsedWindow.classList.remove('collapsed-window--collapsed');
+                toggle.classList.add('open');
+            } else {
+                collapsedWindow.classList.add('collapsed-window--collapsed');
+                toggle.classList.remove('open');
+            }
+        })
     })
 })();
