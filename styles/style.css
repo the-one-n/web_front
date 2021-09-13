@@ -151,6 +151,8 @@ margin-top: 5%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-weight: bold;
+
 }
 
 .nav-menu-item__icon {
