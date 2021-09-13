@@ -98,7 +98,7 @@ margin-top: 5%;
 	display: block;
 	width: 0;
 	height: 5px;
-	background-color: #000;
+	background-color: red;
 	position: absolute;
 	bottom: 0;
 	transition: width .5s ease-in-out;
@@ -143,7 +143,7 @@ margin-top: 5%;
 
 .nav-menu-item:hover .nav-menu-item__link,
 .nav-menu-item:hover .fa-icon {
-	color: black;
+	color: red;
 }
 
 .nav-menu-item:hover::after {
@@ -187,7 +187,7 @@ margin-top: 5%;
 	transition: .3s ease-in-out;
 }
 
-.submenu-item, .submenu-sublist-item {
+.submenu-item{
 	background:  black;
 	color: white;
 	padding: 20px 0 20px 20px;
@@ -196,6 +196,18 @@ margin-top: 5%;
 	width: 150px;
 	margin-bottom: 2px;
 }
+
+
+	.submenu-sublist-item{
+		background:  black;
+		color: white;
+		padding: 20px 0 20px 20px;
+		right:  -1.2rem;
+		position: relative;
+		display: block;
+		width: 150px;
+		margin-bottom: 2px;
+	}
 
 .submenu-sublist-item__link, .submenu-item__link {
 	text-transform: none;
@@ -365,9 +377,11 @@ footer{
 		width: 90%;
 	}
 
-	.submenu, .submenu-sublist {
+	.submenu{
 		right: -10rem;
 	}
+
+	
 
 	.submenu-item, .submenu-sublist-item {
 		padding: 5px;
@@ -487,18 +501,23 @@ footer{
 	text-decoration: none;
 	color:  white;
 }
+.footer-video{
+    background: url("https://i.ytimg.com/vi/kkmW-tppFPM/hqdefault.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    z-index: 228;
+}
 
 .instagram{
 	width: 100%;
-	height: 90px;
 }
 
 .tiktok{
 	width: 100%;
-	height: 90px;
 }
 
 .facebook{
 	width: 100%;
-	height: 90px;
 }

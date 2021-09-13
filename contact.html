@@ -4,17 +4,14 @@
 		<title>KonohaGakure</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/fonts/fonts.css">
 		<link rel="stylesheet" href="styles/slider.css">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="vendor/splide/css/splide.min.css">
+		<link rel="stylesheet" href="styles/collapsed-window-toggle.css">
+		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>		
-		<a href="#" id="stock">
-			<div id="okno">
-			</div>
-		</a>
 		<button data-collapsed-window-toggle-id="header" class="header-toggle collapsed-window-toggle">
 			<span></span>
 			<span></span>
@@ -121,7 +118,7 @@
 
 
 		</header>
-			<main>
+		<main>
 				<div class="splide">
 					<div class="splide__track">
 						<ul class="splide__list">
@@ -131,19 +128,34 @@
 						</ul>
 					</div>
 				</div>
-			</main>
-			<footer>
+				<div class="main_footer">
 				<div class="instagram">
-					<a href="https://www.instagram.com"><img src="images/инст.jpg" alt="" width="100%" height="120"></a>
+					<a href="https://www.instagram.com"><img src="images/inst.jpg" alt="" width="100%" height="100" style="
+    margin-bottom: 0px;"></a>
 				</div>
 				<div class="tiktok">
-					<a href="https://www.tiktok.com"><img src="images/тик ток.jpg" alt="" width="100%" height="120"></a>
+					<a href="https://www.tiktok.com"><img src="images/tik tok.jpg" alt="" width="100%" height="100" style="
+    margin-top: 10px;"></a>
 				</div>
 				<div class="facebook">
-					<a href="https://www.facebook.com"><img src="images/инст.jpg" alt="" width="100%" height="120"></a>
+					<a href="https://www.facebook.com"><img src="images/фейсбук.jpg" alt="" width="100%" height="100" style="
+    margin-top: 10px;"></a>
 				</div>
-			</footer>
+			</div>
+			</main>
+		<footer>
+			<div class="instagram">
+				<a href="https://www.instagram.com"><img src="images/inst.jpg" alt="" width="100%" height="90"></a>
+			</div>
+			<div class="tiktok">
+				<a href="https://www.tiktok.com"><img src="images/tik tok.jpg" alt="" width="100%" height="90"></a>
+			</div>
+			<div class="facebook">
+				<a href="https://www.facebook.com"><img src="images/фейсбук.jpg" alt="" width="100%" height="90"></a>
+			</div>
+		</footer>
 		<script src="vendor/splide/js/splide.min.js"></script>
 		<script src="js/splide.js"></script>
+		<script src="js/collapsed-window-toggle.js"></script>
 	</body>
 </html>
