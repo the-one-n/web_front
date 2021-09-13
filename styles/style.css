@@ -36,12 +36,12 @@ button, input {
 
 
 header {
-	background: orange url("../images/sushi.gif");
+	background: black url("../images/sushi.gif");
 	position: fixed;
 	top: 0;
 	left: 0;
 	background-size: 100% 100%	;
-	color:  black;
+	color:  white;
 	height:  100vh;
 	z-index: 1500;
 	min-width: 15vw;
@@ -51,12 +51,12 @@ main {
 	margin-left: 15vw;
 	color:  white;
 	background:  black;
-	min-width: 70vw;
+	max-width: 70vw;
 }
 
 
 .heading2{
-	margin-left:-30%;
+	margin-left:-35%;
 	font-family: 'Pacifico', serif;
 	color:  white;
 	width: 100%;
@@ -94,7 +94,7 @@ main {
 .heading {
 	font-family: 'Pacifico', serif;
 	font-size: 2vw;
-	color:  black;
+	color:  white;
 	width: 100%;
 	text-align: center;
 }
@@ -122,7 +122,7 @@ margin-top: 5%;
 	display: block;
 	width: 0;
 	height: 5px;
-	background-color: red;
+	background-color: orange;
 	position: absolute;
 	bottom: 0;
 	transition: width .5s ease-in-out;
@@ -130,7 +130,7 @@ margin-top: 5%;
 
 .nav-menu-item__link {
 	font-size: 1vw;
-	color:  black;
+	color:  white;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
@@ -167,7 +167,7 @@ margin-top: 5%;
 
 .nav-menu-item:hover .nav-menu-item__link,
 .nav-menu-item:hover .fa-icon {
-	color: red;
+	color: orange;
 }
 
 .nav-menu-item:hover::after {
@@ -276,10 +276,14 @@ margin-top: 5%;
 }
 
 footer{
-	background:  orange;
+	position:  fixed;
+	top:  0;
+	right:  0;
+	background:  black;
 	background-image: url("../images/bg.gif");
 	background-size: 100% 100%	;
-	min-width:  15vw;
+	max-width:  15vw;
+	height: 100vh;
 }
 
 .icon {
@@ -454,9 +458,12 @@ footer{
 		font-size: 8vw;
 	}
 
-	.submenu, .submenu-sublist {
+	.submenu{
 		right: -7rem;
 	}
+	.submenu-sublist {
+    right: -6rem;
+}
 
 	.submenu-item, .submenu-sublist-item {
 		padding: 5px;
@@ -464,7 +471,7 @@ footer{
 	}
 
 	.submenu-item__link, .submenu-sublist-item__link {
-		font-size: 5vw;
+		font-size: 3vw;
 	}
 
 	.header-footer {
@@ -500,7 +507,7 @@ footer{
     background-position: center;
     background-size: cover;
     display: block;
-    z-index: 228;
+		margin-bottom:  3px;    
 }
 
 .instagram{
