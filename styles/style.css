@@ -195,12 +195,6 @@ margin-top: 5%;
 	z-index: 1;
 }
 
-.submenu-item:hover .submenu-sublist {
-	visibility: visible;
-	opacity: 1;
-	transform: scaleY(1);
-}
-
 .submenu-sublist {
 	visibility: hidden;
 	opacity: 0;
@@ -221,19 +215,32 @@ margin-top: 5%;
 	display: block;
 	width: 150px;
 	margin-bottom: 2px;
+	transition: background-color .4s ease-in-out,
+				color .4s ease-in-out;
+}
+
+.submenu-item:hover {
+	background-color: orange;
+	color: black;
+}
+
+.submenu-item:hover .submenu-sublist {
+	visibility: visible;
+	opacity: 1;
+	transform: scaleY(1);
 }
 
 
-	.submenu-sublist-item{
-		background:  black;
-		color: white;
-		padding: 20px 0 20px 20px;
-		right:  -1.2rem;
-		position: relative;
-		display: block;
-		width: 150px;
-		margin-bottom: 2px;
-	}
+.submenu-sublist-item {
+	background:  black;
+	color: white;
+	padding: 20px 0 20px 20px;
+	right:  -1.2rem;
+	position: relative;
+	display: block;
+	width: 150px;
+	margin-bottom: 2px;
+}
 
 .submenu-sublist-item__link, .submenu-item__link {
 	text-transform: none;
