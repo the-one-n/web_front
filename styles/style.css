@@ -260,8 +260,8 @@ margin-top: 5%;
 }
 
 .header-footer-a:hover{
-	color: orangered;
-	transition: .4s ease-in-out;
+	color: orange;
+	transition: .2s ease-in-out;
 }
 
 .swiper {
