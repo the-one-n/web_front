@@ -3,6 +3,7 @@ html, body {
 	padding:  0;
 	width: 100%;
 	overflow-x: hidden;
+	font-size: 14px;
 }
 
 body {
@@ -157,7 +158,7 @@ margin-top: 5%;
 
 .nav-menu-item__icon {
 	width: 40px;
-	line-height: .8; !important;
+	line-height: .8 !important;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -221,6 +222,9 @@ margin-top: 5%;
 
 .submenu-item:hover {
 	background-color: orange;
+}
+
+.submenu-item:hover .submenu-item__link {
 	color: black;
 }
 
