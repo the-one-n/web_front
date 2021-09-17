@@ -37,7 +37,7 @@ button, input {
 
 
 header {
-	background: black url("../images/sushi.gif");
+	background: black url("../image/sushi.gif");
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -293,7 +293,7 @@ footer{
 	top:  0;
 	right:  0;
 	background:  orange;
-	background-image: url("../images/bg.gif");
+	background-image: url("../image/bg.gif");
 	background-size: 100% 100%	;
 	max-width:  15vw;
 	height: 100vh;
@@ -504,15 +504,15 @@ footer{
 }
 
 .minus {
-	background-image: url("../images/test/minus.svg");
+	background-image: url("../image/test/minus.svg");
 }
 
 .plus {
-	background-image: url("../images/test/plus.svg");
+	background-image: url("../image/test/plus.svg");
 }
 
 .remove {
-	background-image: url("../images/test/remove.svg");
+	background-image: url("../image/test/remove.svg");
 }
 
 .footer-video{

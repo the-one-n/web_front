@@ -625,10 +625,10 @@ function getRect(elm) {
   return elm.getBoundingClientRect();
 }
 /**
- * Trigger the given callback after all images contained by the element are loaded.
+ * Trigger the given callback after all image contained by the element are loaded.
  *
- * @param {Element}  elm      - Element that may contain images.
- * @param {Function} callback - Callback function fired right after all images are loaded.
+ * @param {Element}  elm      - Element that may contain image.
+ * @param {Function} callback - Callback function fired right after all image are loaded.
  */
 
 function loaded(elm, callback) {
@@ -1195,12 +1195,12 @@ var DEFAULTS = {
   resetProgress: true,
 
   /**
-   * Loading images lazily.
+   * Loading image lazily.
    * Image src must be provided by a data-splide-lazy attribute.
    *
    * - false: Do nothing.
-   * - 'nearby': Only images around an active slide will be loaded.
-   * - 'sequential': All images will be sequentially loaded.
+   * - 'nearby': Only image around an active slide will be loaded.
+   * - 'sequential': All image will be sequentially loaded.
    *
    * @type {boolean|string}
    */
@@ -4847,7 +4847,7 @@ var UPDATE_EVENT = 'updated.page refresh.page';
 });
 ;// CONCATENATED MODULE: ./src/js/components/lazyload/index.js
 /**
- * The component for loading slider images lazily.
+ * The component for loading slider image lazily.
  *
  * @author    Naotoshi Fujita
  * @copyright Naotoshi Fujita. All rights reserved.
@@ -4870,7 +4870,7 @@ var SRC_DATA_NAME = 'data-splide-lazy';
 
 var SRCSET_DATA_NAME = 'data-splide-lazy-srcset';
 /**
- * The component for loading slider images lazily.
+ * The component for loading slider image lazily.
  *
  * @param {Splide} Splide     - A Splide instance.
  * @param {Object} Components - An object containing components.
@@ -4901,7 +4901,7 @@ var SRCSET_DATA_NAME = 'data-splide-lazy-srcset';
 
   var options = Splide.options;
   /**
-   * Whether to load images sequentially or not.
+   * Whether to load image sequentially or not.
    *
    * @type {boolean}
    */
@@ -4981,7 +4981,7 @@ var SRCSET_DATA_NAME = 'data-splide-lazy-srcset';
       }
 
       return true;
-    }); // Unbind if all images are loaded.
+    }); // Unbind if all image are loaded.
 
     if (!images[0]) {
       Splide.off("moved." + name);
@@ -5016,7 +5016,7 @@ var SRCSET_DATA_NAME = 'data-splide-lazy-srcset';
     setAttribute(img, 'src', getAttribute(img, SRC_DATA_NAME) || '');
   }
   /**
-   * Start loading a next image in images array.
+   * Start loading a next image in image array.
    */
 
 
