@@ -518,15 +518,15 @@ footer{
 }
 
 .minus {
-	background-image: url("../image/test/minus.svg");
+	background-image: url("../image/minus.svg");
 }
 
 .plus {
-	background-image: url("../image/test/plus.svg");
+	background-image: url("../image/plus.svg");
 }
 
 .remove {
-	background-image: url("../image/test/remove.svg");
+	background-image: url("../image/remove.svg");
 }
 
 .footer-video{

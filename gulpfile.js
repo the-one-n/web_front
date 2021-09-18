@@ -4,7 +4,7 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass')(require('sass'));
 
 function compileJs() {
-    return gulp.src(['./js/*.js', './vendor/**/*.js'])
+    return gulp.src(['./vendor/**/*.js', './js/*.js'])
         .pipe(concat('index.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
