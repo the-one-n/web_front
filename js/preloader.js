@@ -14,10 +14,12 @@
                 },16);
     }
 
-    window.onload = function() {
-        setTimeout(
-            function() {
-                fadeOut(helloPreloader);
+    if (helloPreloader) {
+        window.onload = function() {
+            setTimeout(
+                function() {
+                    fadeOut(helloPreloader);
                 },1000);
-    };
+        };
+    }
 })();
