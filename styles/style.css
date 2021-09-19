@@ -64,6 +64,56 @@ main {
 	min-width: 70vw;
 }
 
+.main_404{
+	width: 100%;
+	height: 100vh;
+	background: orange;
+	text-align: center;
+    padding-top:  20vw;
+    font-size: 22px;
+  
+}
+
+.main_404 h1{
+	color: white;
+	position: relative;
+    z-index: 3000;
+}
+
+.main_404 a{
+	text-decoration: none;
+  	text-transform: uppercase;
+  	color: white;
+}
+
+
+.button_main {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: relative;
+  z-index: 3000;
+}
+
+.button_main:hover {
+	background-color: black;
+	color: white;
+}
+
+.button_main:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 .heading2{
 	margin-left:-35%;
