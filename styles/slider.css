@@ -1,3 +1,7 @@
+.splide {
+    padding: 0 !important;
+}
+
 .splide__slide {
     width: 82.5%;
     height: 100vh;
