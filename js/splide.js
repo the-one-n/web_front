@@ -1,10 +1,14 @@
 (function () {
-    const splideOptions = {
-        type: 'loop',
-        rewind: true,
-        autoplay: true,
-        pauseOnHover: false,
-    }
+    const slider = document.querySelector('.splide');
 
-    new Splide('.splide', splideOptions).mount();
+    if (slider) {
+        const splideOptions = {
+            type: 'loop',
+            rewind: true,
+            autoplay: true,
+            pauseOnHover: false,
+        }
+
+        new Splide('.splide', splideOptions).mount();
+    }
 })();
