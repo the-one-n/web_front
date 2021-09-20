@@ -509,7 +509,9 @@ footer{
 	.submenu{
 		right: -11.5rem;
 	}
-
+.submenu-sublist {
+    right: -9rem;
+}
 	
 
 	.submenu-item, .submenu-sublist-item {
@@ -558,7 +560,7 @@ footer{
 		right: -8rem;
 	}
 	.submenu-sublist {
-    right: -6rem;
+    right: -5.5rem;
 }
 
 	.submenu-item, .submenu-sublist-item {
