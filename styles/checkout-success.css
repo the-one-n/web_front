@@ -1,0 +1,50 @@
+.checkout-success {
+    width: 100%;
+    height: 100%;
+    background: black;
+    text-align: center;
+    padding-top:  20vw;
+    font-size: 22px;
+    font-family: 'DaysOne', sans-serif;
+}
+
+.checkout-success__heading {
+    color: white;
+    position: relative;
+    z-index: 3000;
+    padding-bottom:  50px;
+}
+
+.checkout-success__button {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    position: relative;
+    font-family: 'DaysOne', sans-serif;
+    transition: .3s ease-in-out;
+}
+
+.checkout-success__button:hover {
+    background-color: black;
+    color: white;
+}
+
+.checkout-success__button:active {
+    background-color: orange;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.checkout-success__button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
