@@ -254,7 +254,7 @@ margin-top: 5%;
 .submenu {
 	padding: 0;
 	position: absolute;
-	right: -10.8rem;
+	right: -12.25rem;
 	top: -19vw;
 	visibility: hidden;
 	opacity: 0;
@@ -307,11 +307,19 @@ margin-top: 5%;
 	background:  black;
 	color: white;
 	padding: 20px 0 20px 20px;
-	right:  -1.2rem;
+	right:  -2.5rem;
 	position: relative;
 	display: block;
 	width: 150px;
 	margin-bottom: 2px;
+}
+
+.submenu-sublist-item:hover {
+	background-color: orange;
+}
+
+.submenu-sublist-item:hover .submenu-sublist-item__link {
+	color: black;
 }
 
 .submenu-sublist-item__link, .submenu-item__link {
@@ -390,6 +398,7 @@ footer{
 
 	.submenu {
 		top: -20vw;
+		right:  -12.25rem;
 	}
 
 	footer {
@@ -498,7 +507,7 @@ footer{
 	}
 
 	.submenu{
-		right: -10rem;
+		right: -11.5rem;
 	}
 
 	
@@ -546,7 +555,7 @@ footer{
 	}
 
 	.submenu{
-		right: -7rem;
+		right: -8rem;
 	}
 	.submenu-sublist {
     right: -6rem;
