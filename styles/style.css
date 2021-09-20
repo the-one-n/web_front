@@ -65,19 +65,20 @@ main {
 }
 
 .main_404{
-	width: 100%;
-	height: 100vh;
+	width: 71vw;
+	height: 100%;
 	background: black;
 	text-align: center;
-    padding-top:  20vw;
-    font-size: 22px;
-  
+  padding-top:  20vw;
+  font-size: 22px;
+  position: fixed;
 }
 
 .main_404 h1{
 	color: white;
 	position: relative;
-    z-index: 3000;
+  z-index: 3000;
+  padding-bottom:  50px;
 }
 
 .main_404 a{
