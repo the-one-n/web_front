@@ -6,36 +6,32 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="styles/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="styles/style2.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="styles//style.css">
+<link rel="stylesheet" href="styles/auth.css">
 <body>
-<div class="men">
-	<div class="container">
-	    <div class="register">
-			   <div class="col-md-6 login-left">
-			  	 <h3>Новый пользователь</h3>
-				 <p>Текст про создание аккаунта.</p>
-				 <a class="acount-btn" href="register.html">Создать аккаунт</a>
-			   </div>
-			   <div class="col-md-6 login-right">
-			  	<h3>Уже зарегистрированы?</h3>
-				<p>Если у вас есть аккаунт, тогда вы можете залогиниться.</p>
-				<form>
-				  <div>
-					<span>Email<label>*</label></span>
-					<input type="text"> 
+<main>
+		<div class="auth">
+			<div class="col-md-6 auth-left">
+			  <h3 class="auth__heading">Новый пользователь</h3>
+				<p>Текст про создание аккаунта.</p>
+				<a class="auth__create-account" href="register.html">Создать аккаунт</a>
+			</div>
+			<div class="col-md-6 auth-right">
+			  <h3 class="auth__registered">Уже зарегистрированы?</h3>
+				<form class="auth__form">
+				  <div class="form-group">
+						<label for="email">Email*</label>
+						<input class="auth__form-input form-control" id="email" type="email"> 
 				  </div>
-				  <div>
-					<span>Пароль<label>*</label></span>
-					<input type="text"> 
+				  <div class="form-group">
+						<label for="password">Пароль</label>
+						<input class="auth__form-input form-control" id="password" type="password"> 
 				  </div>
 				  <a class="forgot" href="#">Забыли пароль?</a>
-				  <input type="submit" value="Login">
-			    </form>
-			   </div>	
-			   <div class="clearfix"> </div>
+					<input class="auth__form-submit" type="submit" value="Логин">
+			  </form>
+			</div>	
 		</div>
-	 </div>
-</div>
-
+</main>
 </body>
 </html>		
